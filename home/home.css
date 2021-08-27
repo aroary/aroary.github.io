@@ -1,7 +1,26 @@
-body{
+body {
     background-color: aliceblue;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body header {
+    background-color: #040F0F;
+    color: #00F075;
+    width: 100%;
+    padding: 10px;
+}
+
+body main {
     margin-left: 35%;
     margin-right: 35%;
+}
+
+body footer {
+    background-color: #040F0F;
+    color: #00F075;
+    width: 100%;
+    padding: 20px;
 }
