@@ -1,3 +1,4 @@
+body { background-color: aliceblue; color: black; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
 /* header and footer */
 body header { background-color: #040F0F; color: #2f97c1; width: 100%; padding: 10px; }
 body header span { padding-left: 100px; font-size: 36px; vertical-align: top; }
@@ -10,6 +11,6 @@ body footer a:hover { color: #009075; }
 body footer code,body header code { user-select: all; }
 body footer code:hover,body header code:hover{ background-color: rgba(0, 0, 0, 0.5); }
 /* header and footer */
-main { background-color: #0d1117; margin-left: 20%; margin-right: 20%; text-align: center; }
+main { margin-left: 20%; margin-right: 20%; text-align: center; }
 main a { height: 100px; display: none; }
 main a:hover { height: 150px; }
