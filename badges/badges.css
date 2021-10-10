@@ -11,4 +11,4 @@ body footer a:hover { color: #009075; }
 body footer code,body header code { user-select: all; }
 body footer code:hover,body header code:hover{ background-color: rgba(0, 0, 0, 0.5); }
 /* header and footer */
-main { margin-left: 20%; margin-right: 20%; text-align: center; }
+main { margin-left: 20%; margin-right: 20%; text-align: center; max-width: 40%; }
