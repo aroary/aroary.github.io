@@ -20,7 +20,7 @@ const badges = [
     { link: "https://discord.com/", img: "https://img.shields.io/badge/Discord-5865f2?style=1&logo=discord&logoColor=white", alt: "Discord" },
     { link: "https://zoom.us/", img: "https://img.shields.io/badge/Zoom-fff0f0?style=1&logo=zoom", alt: "Zoom" },
     { link: "", img: "https://img.shields.io/badge/Hangouts-ffffff?style=1&logo=google-hangouts", alt: "Hangouts" },
-    { link: "", img: "https://img.shields.io/badge/Hangouts-ffffff?style=1&logo=google-hangouts", alt: "Meet" },
+    { link: "", img: "https://img.shields.io/badge/Meet-ffffff?style=1&logo=google-meet", alt: "Meet" },
     { link: "", img: "https://img.shields.io/badge/Chat-fff?style=1&logo=google-chat", alt: "Chat" },
     { link: "https://code.visualstudio.com/", img: "https://img.shields.io/badge/visual%20studio%20code-303030?style=1&logo=visual-studio-code&logoColor=blue", alt: "Visual Studio Code" },
     { link: "https://replit.com/@aroary", img: "https://img.shields.io/badge/replit-0e1525?style=1&logo=replit", alt: "Replit" },
