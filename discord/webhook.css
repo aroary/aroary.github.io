@@ -15,5 +15,9 @@ body {
 }
 #url {
     text-align: left;
-    width: 100%;
+    width: 50%;
+}
+#pfp {
+    text-align: left;
+    width: 50%;
 }

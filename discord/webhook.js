@@ -4,7 +4,7 @@ function sendMessage() {
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
         username: document.getElementById("name").value,
-        avatar_url: "",
+        avatar_url: document.getElementById("pfp").value,
         content: document.getElementById("content").value
     };
 
