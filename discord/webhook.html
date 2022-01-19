@@ -13,6 +13,7 @@
         <textarea id="content" placeholder="content" cols="30" rows="10"></textarea><br>
         <input id="url" type="text" placeholder="https://discord.com/api/webhooks/[ID]/[TOKEN]">
         <input id="pfp" type="text" placeholder="https://"><br>
-        <button onclick="sendMessage()">Send</button>
+        <button type="submit" onclick="sendMessage()">Send</button>
+        <button type="reset" onclick="document.getElementById('content').value = ''">Clear</button>
     </body>
 </html>

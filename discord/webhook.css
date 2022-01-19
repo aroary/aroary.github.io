@@ -5,6 +5,9 @@ body {
     margin-right: 30%;
     text-align: center;
 }
+input, textarea {
+    border: none;
+}
 #name {
     text-align: center;
     width: 100%;
@@ -15,9 +18,9 @@ body {
 }
 #url {
     text-align: left;
-    width: 50%;
+    width: 48%;
 }
 #pfp {
     text-align: left;
-    width: 50%;
+    width: 48%;
 }
