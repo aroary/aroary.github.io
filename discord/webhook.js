@@ -10,3 +10,7 @@ function sendMessage() {
 
     request.send(JSON.stringify(params));
 }
+
+document.getElementById("url").value = document.cookie || "";
+
+document.getElementById("url").onchange = e => document.cookie = e.target.value;
