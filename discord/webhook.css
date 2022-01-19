@@ -7,6 +7,7 @@ body {
 }
 input, textarea {
     border: none;
+    resize: vertical;
 }
 #name {
     text-align: center;
@@ -18,9 +19,9 @@ input, textarea {
 }
 #url {
     text-align: left;
-    width: 48%;
+    width: 100%;
 }
 #pfp {
     text-align: left;
-    width: 48%;
+    width: 100%;
 }
