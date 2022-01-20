@@ -80,7 +80,6 @@ const formatButton = document.getElementById("format");
 
 const embedTitle = document.getElementById("embedTitle");
 const embedURL = document.getElementById("embedURL");
-const embedIcon = document.getElementById("embedIcon");
 const embedColor = document.getElementById("embedColor");
 const embedDescription = document.getElementById("embedDescription");
 const embedFooter = document.getElementById("embedFooter");
@@ -102,7 +101,6 @@ function clear() {
     if (embed) {
         embedTitle.value = "";
         embedURL.value = "";
-        embedIcon.value = "";
         embedColor.value = "";
         embedDescription.value = "";
         embedFooter.value = "";
@@ -114,9 +112,7 @@ function clear() {
     };
 };
 
-function format() {
-    content.value = JSON.parse(JSON.stringify(content.value));
-};
+document.getElementById("clear").onclick = clear;
 
 function sendMessage() {
     const valid = validate();
@@ -144,7 +140,10 @@ function sendMessage() {
     };
 
     request.send(JSON.stringify(params));
-    request.addEventListener('load', () => error.innerHTML = request.status);
+    request.addEventListener('load', () => {
+        error.innerHTML = request.status;
+        if (request.status < 400) clear();
+    });
 };
 
 function validate() {
