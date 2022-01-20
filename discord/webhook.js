@@ -172,7 +172,6 @@ function toggleEmbed(to = !embed) {
         content.setAttribute("placeholder", "Content");
         username.style.display = "block";
         pfp.style.display = "block";
-        formatButton.style.display = "none";
     };
 };
 
@@ -183,12 +182,10 @@ function toggleJSON(to = !json) {
         content.setAttribute("placeholder", "JSON");
         username.style.display = "none";
         pfp.style.display = "none";
-        formatButton.style.display = "inline";
     } else {
         content.setAttribute("placeholder", "Content");
         username.style.display = "block";
         pfp.style.display = "block";
-        formatButton.style.display = "none";
     };
 
     toggleEmbed(false);
