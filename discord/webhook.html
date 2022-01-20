@@ -4,17 +4,47 @@
         <title>Discord Webhook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Send a message to a discord webhook with the message and message embed generator">
+		<meta name="keywords" content="discord, webhook, discord webhook, generator, tool">
+		<meta name="author" content="aroary">
+        <meta property="og:title" content="Discord Webhook">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="../media/tenor.gif">
+        <meta property="og:url" content="https://aroary.github.io/discord/webhook.html">
+        <meta property="og:description" content="Send a message to a discord webhook with the message and message embed generator">
         <link rel="shortcut icon" href="../media/tenor.gif" type="image/x-icon">
         <link rel="stylesheet" href="./webhook.css">
         <script src="./webhook.js" defer></script>
     </head>
     <body>
         <h1>Send a message to a webhook</h1>
-        <input id="name" type="text" placeholder="name"><br>
-        <textarea id="content" placeholder="content" cols="30" rows="10"></textarea><br>
-        <input id="url" type="text" placeholder="https://discord.com/api/webhooks/[ID]/[TOKEN]"><br>
-        <input id="pfp" type="text" placeholder="https://"><br>
-        <button type="submit" onclick="sendMessage()">Send</button>
-        <button type="reset" onclick="document.getElementById('content').value = ''">Clear</button>
+        <button id="json">JSON</button>
+        <button id="embed">Embed</button>
+        <div id="messageData">
+            <input id="name" type="text" placeholder="Name"><br>
+            <textarea id="content" placeholder="Content" rows="5"></textarea><br>
+        </div>
+        <br>
+        <div id="embedData">
+            <input id="embedAuthor" type="text" placeholder="Author"><br>
+            <input id="embedAuthorIcon" type="text" placeholder="Author Icon URL"><br>
+            <input id="embedTitle" type="text" placeholder="Title"><br>
+            <textarea id="embedDescription" placeholder="Description" rows="5"></textarea><br>
+            <input id="embedColor" type="text" placeholder="Color"><br>
+            <input id="embedURL" type="text" placeholder="URL"><br>
+            <input id="embedImage" type="text" placeholder="Image URL"><br>
+            <input id="embedThumbnail" type="text" placeholder="Thumbnail URL"><br>
+            <input id="embedFooter" type="text" placeholder="Footer Value"><br>
+            <input id="embedFooterIcon" type="text" placeholder="Footer Icon URL">
+        </div>
+        <br>
+        <div id="hookData">
+            <input id="pfp" type="text" placeholder="Profile URL"><br>
+            <br><input id="url" type="text" placeholder="Webhook url">
+        </div>
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="clear()">Clear</button>
+        <button id="format" onclick="format()">Format</button>
+        <p id="error"></p>
     </body>
 </html>

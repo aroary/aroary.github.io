@@ -7,21 +7,10 @@ body {
 }
 input, textarea {
     border: none;
+    margin-top: 2px;
     resize: vertical;
-}
-#name {
-    text-align: center;
-    width: 100%;
-}
-#content {
     text-align: left;
     width: 100%;
 }
-#url {
-    text-align: left;
-    width: 100%;
-}
-#pfp {
-    text-align: left;
-    width: 100%;
-}
+#name, #embedAuthor, #embedTitle, #embedColor { text-align: center; }
+#embedData, #format { display: none; }
