@@ -1,74 +1,3 @@
-class Embed {
-    constructor () {
-        this.title = "";
-        this.description = "";
-        this.url = "";
-        this.color = "";
-        this.footer = {};
-        this.image = {};
-        this.thumbnail = {};
-        this.author = {};
-        this.fields = [];
-    };
-
-    setTitle(title) {
-        this.title = title;
-        return this;
-    };
-
-    setDescription(description) {
-        this.description = description;
-        return this;
-    };
-
-    setURL(url) {
-        this.url = url;
-        return this;
-    };
-
-    setColor(color) {
-        this.color = color;
-        return this;
-    };
-
-    setFooter(footer, icon) {
-        this.footer = { text: footer, icon_url: icon };
-        return this;
-    };
-
-    setImage(image) {
-        this.image = { url: image };
-        return this;
-    };
-
-    setThumbnail(thumbnail) {
-        this.thumbnail = { url: thumbnail };
-        return this;
-    };
-
-    setAuthor(author, icon, url = null) {
-        this.author = { name: author, icon_url: icon, url: url };
-        return this;
-    };
-
-    addField(name, value, inline = false) {
-        this.fields.push({ name: name, value: value, inline: inline });
-        return this;
-    };
-
-    toJSON() {
-        return {
-            title: this.title,
-            description: this.description,
-            url: this.url,
-            color: this.color,
-            footer: this.footer,
-            image: this.image,
-            thumbnail: this.thumbnail
-        };
-    };
-};
-
 const url = document.getElementById("url");
 const username = document.getElementById("name");
 const pfp = document.getElementById("pfp");
@@ -123,19 +52,17 @@ function sendMessage() {
 
     const params = json ? JSON.parse(content.value) : { username: username.value, avatar_url: pfp.value, content: content.value, embeds: [] };
 
-    if (embed) {
-        const embed = new Embed()
-            .setTitle(embedTitle.value || null)
-            .setDescription(embedDescription.value || null)
-            .setURL(embedURL.value || null)
-            .setColor(embedColor.value || null)
-            .setFooter(embedFooter.value || null, embedFooterIcon.value || null)
-            .setImage(embedImage.value || null)
-            .setThumbnail(embedThumbnail.value || null)
-            .setAuthor(embedAuthor.value, embedAuthorIcon.value || null);
-
-        params.embeds.push(embed.toJSON());
-    };
+    if (embed) params.embeds.push({
+        title: embedTitle.value || null,
+        url: embedURL.value || null,
+        color: embedColor.value || null,
+        description: embedDescription.value || null,
+        footer: { text: embedFooter.value || null, icon_url: embedFooterIcon.value || null },
+        image: { url: embedImage.value || null },
+        thumbnail: { url: embedThumbnail.value || null },
+        author: { name: embedAuthor.value || null, icon_url: embedAuthorIcon.value || null, url: null },
+        fields: []
+    });
 
     request.send(JSON.stringify(params));
     request.addEventListener('load', () => {
