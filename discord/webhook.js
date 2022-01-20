@@ -80,7 +80,7 @@ function validate() {
     if (!content.value && !embed) return "No data to send";
     if (content.value.length > 2000) return "Content too long";
     if (embed) {
-        if (embedColor.value && embedColor.value.length != 6 && embedColor.value.length != 7) return "Color must be a hex color code";
+        if (embedColor.value && Number.isNaN(embedColor.value)) return "Color must be a number code";
         if (embedAuthorIcon.value && !embedAuthorIcon.value.startsWith("https://") && !embedAuthorIcon.value.startsWith("http://")) return "Invalid author icon url";
         if (embedImage.value && !embedImage.value.startsWith("https://") && !embedImage.value.startsWith("http://")) return "Invalid image url";
         if (embedThumbnail.value && !embedThumbnail.value.startsWith("https://") && !embedThumbnail.value.startsWith("http://")) return "Invalid thumbnail url";
