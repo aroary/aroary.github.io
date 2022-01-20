@@ -112,8 +112,6 @@ function clear() {
     };
 };
 
-document.getElementById("clear").onclick = clear;
-
 function sendMessage() {
     const valid = validate();
     if (valid) return error.innerHTML = valid;
@@ -145,6 +143,9 @@ function sendMessage() {
         if (request.status < 400) clear();
     });
 };
+
+document.getElementById("clear").onclick = clear;
+document.getElementById("send").onclick = sendMessage;
 
 function validate() {
     if (!url.value.startsWith("https://discord.com/api/webhooks/")) return "Invalid webhook url";
