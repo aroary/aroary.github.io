@@ -30,7 +30,7 @@ function clear() {
     if (embed) {
         embedTitle.value = "";
         embedURL.value = "";
-        embedColor.value = "";
+        // embedColor.value = "";
         embedDescription.value = "";
         embedFooter.value = "";
         embedFooterIcon.value = "";
