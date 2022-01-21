@@ -42,9 +42,52 @@
             <hr>
             <input id="pfp" type="text" placeholder="Profile URL">
             <hr>
-            <input id="url" type="text" placeholder="Webhook url">
+            <input id="url" type="text" placeholder="Webhook URL">
         </div>
         <button id="send">Send</button>
         <p id="error">Press send</p>
+        <hr>
+        <h3>About</h3>
+        <p class="about">
+            This tool is for sending single messages to a webhook.
+            It supports sending embeds and customizing your username and profile picture.
+            It also supports sending a custom JSON request to your webhook.
+            Messages are sent from your computer, not a server that is serving this website.
+        </p>
+        <h4>Creating a webhook</h4>
+        <p class="about">
+            In your discord server, open a channel settings and open the integrations tab (channel > edit > integrations) or open the integrations tab for the server (server > integrations).
+            <!------------------------------------->
+        </p>
+        <h4>Sending a message</h4>
+        <p class="about">
+            To send a message, paste your webhook url into the <em>Webhook URL</em> input.
+            Then, optionally add a webhook username in <em>Name</em> and a webhook profile picture in <em>Profile url</em>.
+            Now you need to add content to your data to send.
+            In the content input, add a message up to 2000 characters long.
+            To send your message to your webhook, Press the <em>send</em> button.
+            Note that when you send a message your input value will be cleared.<br>
+        </p>
+        <h4>Adding an embed</h4>
+        <p class="about">
+            To add an embed, click the <em>embed</em> button to open the embed inputs.
+            Fill in the data in the appropriate locations.
+            Inputs the specify <em>URL</em> must be http or https protocols.
+            Note that if you are sending an embed you do not need to include any message content in the <em>Content</em> input.
+        </p>
+        <h4>Using JSON</h4>
+        <p class="about">
+            To add custom JSON, press the <em>JSON</em> button to enable JSON format.
+            A JSON format input must include at least either a <em>content</em> parameter or an <em>embeds</em> parameter.
+            Example minimum JSON: <code>{content:"DATA"}</code>.
+        </p>
+        <h4>Errors</h4>
+        <p class="about">
+            If the request status is <em>204</em> then your request succeded.
+            If your request status is <em>400</em> them your inputs are invalid and need to be corrected.
+            Inputs are not reset if the status is an error.
+        </p>
+        <hr>
+        <h6>aroary</h6>
     </body>
 </html>
