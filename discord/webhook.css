@@ -12,6 +12,12 @@ input, textarea {
     text-align: left;
     width: 100%;
 }
+code {
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
 #name, #embedAuthor, #embedTitle, #embedColor { text-align: center; }
 #embedData, #format { display: none; }
 .about { text-align: justify; }

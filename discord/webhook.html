@@ -26,16 +26,16 @@
             <textarea id="content" placeholder="Content" rows="5"></textarea><br>
         </div>
         <div id="embedData">
-            <hr><input id="embedAuthor" type="text" placeholder="Author"><br>
-            <input id="embedAuthorIcon" type="text" placeholder="Author Icon URL"><br>
-            <input id="embedTitle" type="text" placeholder="Title"><br>
+            <hr><input id="embedAuthor" type="text" placeholder="Author" onClick="this.select();"><br>
+            <input id="embedAuthorIcon" type="text" placeholder="Author Icon URL" onClick="this.select();"><br>
+            <input id="embedTitle" type="text" placeholder="Title" onClick="this.select();"><br>
             <textarea id="embedDescription" placeholder="Description" rows="5"></textarea><br>
-            <input id="embedColor" type="text" placeholder="Color"><br>
-            <input id="embedURL" type="text" placeholder="URL"><br>
-            <input id="embedImage" type="text" placeholder="Image URL"><br>
-            <input id="embedThumbnail" type="text" placeholder="Thumbnail URL"><br>
-            <input id="embedFooter" type="text" placeholder="Footer Value"><br>
-            <input id="embedFooterIcon" type="text" placeholder="Footer Icon URL">
+            <input id="embedColor" type="text" placeholder="Color" onClick="this.select();"><br>
+            <input id="embedURL" type="text" placeholder="URL" onClick="this.select();"><br>
+            <input id="embedImage" type="text" placeholder="Image URL" onClick="this.select();"><br>
+            <input id="embedThumbnail" type="text" placeholder="Thumbnail URL" onClick="this.select();"><br>
+            <input id="embedFooter" type="text" placeholder="Footer Value" onClick="this.select();"><br>
+            <input id="embedFooterIcon" type="text" placeholder="Footer Icon URL" onClick="this.select();">
         </div>
         <button id="clear">Clear</button><br>
         <hr>
@@ -44,7 +44,7 @@
             <hr>
             <input id="pfp" type="text" placeholder="Profile URL">
             <hr>
-            <input id="url" type="text" placeholder="Webhook URL">
+            <input id="url" type="text" placeholder="Webhook URL" onClick="this.select();">
         </div>
         <button id="send">Send</button>
         <p id="error">Press send</p>
