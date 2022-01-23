@@ -20,5 +20,5 @@ code {
 }
 #name, #embedAuthor, #embedTitle, #embedColor { text-align: center; }
 #embedData, #format { display: none; }
-.about { text-align: justify; }
+.about, ul { text-align: justify; }
 h6 { text-align: right; }
