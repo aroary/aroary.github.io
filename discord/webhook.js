@@ -24,6 +24,29 @@ var embed = false;
 var json = false;
 url.value = document.cookie || "";
 
+const parameters = new Proxy(new URLSearchParams(window.location.search), { get: (target, name) => target.get(name) || "" });
+if (parameters.send == "true") sendMessage(parameters.webhook, {
+    username: parameters.username,
+    avatar_url: parameters.avatar,
+    content: parameters.content
+});
+else {
+    url.value = parameters.webhook;
+    username.value = parameters.username;
+    pfp.value = parameters.avatar;
+    content.value = parameters.content;
+    embedTitle.value = parameters.title;
+    embedURL.value = parameters.url;
+    embedColor.value = parameters.color;
+    embedDescription.value = parameters.description;
+    embedFooter.value = parameters.footer;
+    embedFooterIcon.value = parameters.footerIcon;
+    embedImage.value = parameters.image;
+    embedThumbnail.value = parameters.thumbnail;
+    embedAuthor.value = parameters.author;
+    embedAuthorIcon.value = parameters.authorIcon;
+};
+
 function clear() {
     content.value = '';
 
@@ -41,16 +64,16 @@ function clear() {
     };
 };
 
-function sendMessage() {
+function sendMessage(webHookURL = "", parameters = null) {
     const valid = validate();
     if (valid) return error.innerHTML = valid;
     else error.innerHTML = "";
 
     const request = new XMLHttpRequest();
-    request.open("POST", url.value);
+    request.open("POST", webHookURL || url.value);
     request.setRequestHeader('Content-type', 'application/json');
 
-    const params = json ? JSON.parse(content.value) : { username: username.value, avatar_url: pfp.value, content: content.value, embeds: [] };
+    const params = parameters || json ? JSON.parse(content.value) : { username: username.value, avatar_url: pfp.value, content: content.value, embeds: [] };
 
     if (embed) params.embeds.push({
         title: embedTitle.value || null,
