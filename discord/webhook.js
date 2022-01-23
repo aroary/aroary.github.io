@@ -67,7 +67,7 @@ function clear() {
 function sendMessage(webHookURL = "", parameters = null) {
     const valid = validate();
     if (valid) return error.innerHTML = valid;
-    else error.innerHTML = "";
+    else error.innerHTML = "Loading...";
 
     const request = new XMLHttpRequest();
     request.open("POST", webHookURL || url.value);
