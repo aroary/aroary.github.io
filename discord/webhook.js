@@ -70,7 +70,7 @@ function sendMessage(webHookURL = "", parameters = null) {
     else error.innerHTML = "Loading...";
 
     const request = new XMLHttpRequest();
-    request.open("POST", webHookURL || url.value);
+    request.open("POST", url.value); // request.open("POST", webHookURL || url.value);
     request.setRequestHeader('Content-type', 'application/json');
 
     const params = parameters || json ? JSON.parse(content.value) : { username: username.value, avatar_url: pfp.value, content: content.value, embeds: [] };
