@@ -6,6 +6,10 @@ const embedData = document.getElementById("embedData");
 const useEmbed = document.getElementById("embed");
 const useJSON = document.getElementById("json");
 const formatButton = document.getElementById("format");
+const generated = document.getElementById("generated");
+const generate = document.getElementById("generate");
+const openGenerated = document.getElementById("open");
+const copy = document.getElementById("copy");
 
 const embedTitle = document.getElementById("embedTitle");
 const embedURL = document.getElementById("embedURL");
@@ -143,7 +147,25 @@ function toggleJSON(to = !json) {
 };
 
 useEmbed.onclick = () => toggleEmbed();
-
 useJSON.onclick = () => toggleJSON();
+generate.onclick = () => {
+    generated.value = `${window.location.protocol}//${window.location.hostname}${window.location.pathname}?`;
+    if (url.value) generated.value += `webhook=${url.value}&`;
+    if (username.value) generated.value += `username=${username.value}&`;
+    if (pfp.value) generated.value += `avatar=${pfp.value}&`;
+    if (content.value) generated.value += `content=${content.value}&`;
+    if (embedTitle.value) generated.value += `title=${embedTitle.value}&`;
+    if (embedURL.value) generated.value += `url=${embedURL.value}&`;
+    if (embedColor.value) generated.value += `color=${embedColor.value}&`;
+    if (embedDescription.value) generated.value += `description=${embedDescription.value}&`;
+    if (embedFooter.value) generated.value += `footer=${embedFooter.value}&`;
+    if (embedFooterIcon.value) generated.value += `footerIcon=${embedFooterIcon.value}&`;
+    if (embedImage.value) generated.value += `image=${embedImage.value}&`;
+    if (embedThumbnail.value) generated.value += `thumbnail=${embedThumbnail.value}&`;
+    if (embedAuthor.value) generated.value += `author=${embedAuthor.value}&`;
+    if (embedAuthorIcon.value) generated.value += `authorIcon=${embedAuthorIcon.value}&`;
+};
+openGenerated.onclick = () => window.location.href = generated.value || `${window.location.protocol}//${window.location.hostname}${window.location.pathname}?`;
+copy.onclick = () => navigator.clipboard.writeText(generated.value);
 
 url.onchange = e => document.cookie = e.target.value;
