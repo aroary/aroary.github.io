@@ -25,7 +25,7 @@ var json = false;
 url.value = document.cookie || "";
 
 const parameters = new Proxy(new URLSearchParams(window.location.search), { get: (target, name) => target.get(name) || "" });
-if (parameters.send == "true") sendMessage(parameters.webhook, {
+if (parameters.send == "true") sendMessage(null, parameters.webhook, {
     username: parameters.username,
     avatar_url: parameters.avatar,
     content: parameters.content
@@ -64,13 +64,13 @@ function clear() {
     };
 };
 
-function sendMessage(webHookURL = "", parameters = null) {
+function sendMessage(_ = null, webHookURL = "", parameters = null) {
     const valid = validate();
     if (valid) return error.innerHTML = valid;
     else error.innerHTML = "Loading...";
 
     const request = new XMLHttpRequest();
-    request.open("POST", url.value); // request.open("POST", webHookURL || url.value);
+    request.open("POST", webHookURL || url.value);
     request.setRequestHeader('Content-type', 'application/json');
 
     const params = parameters || json ? JSON.parse(content.value) : { username: username.value, avatar_url: pfp.value, content: content.value, embeds: [] };
