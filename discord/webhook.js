@@ -164,6 +164,7 @@ generate.onclick = () => {
     if (embedThumbnail.value) generated.value += `thumbnail=${embedThumbnail.value}&`;
     if (embedAuthor.value) generated.value += `author=${embedAuthor.value}&`;
     if (embedAuthorIcon.value) generated.value += `authorIcon=${embedAuthorIcon.value}&`;
+    generated.value = encodeURI(generated.value);
 };
 openGenerated.onclick = () => window.location.href = generated.value || `${window.location.protocol}//${window.location.hostname}${window.location.pathname}?`;
 copy.onclick = () => navigator.clipboard.writeText(generated.value);
