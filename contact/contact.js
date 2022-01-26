@@ -3,6 +3,10 @@ const returnMethod = document.getElementById("return");
 const message = document.getElementById("message");
 const send = document.getElementById("send");
 
+senderName.value = "";
+returnMethod.value = "";
+message.value = "";
+
 const channelID = "935944333172039742";
 const token = "AKsC-9tZzwEflg7n7xBT--BAAnWF32wlZC1rdjYFKlA2rfr1ifvibzSlSDGg7qhsaQDH";
 
@@ -30,4 +34,7 @@ send.onclick = () => {
 
     request.send(JSON.stringify(params));
     request.addEventListener('load', () => { });
+
+    send.setAttribute("disabled", "disabled");
+    send.innerHTML = "Sent";
 };
