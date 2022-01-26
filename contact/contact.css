@@ -1,0 +1,16 @@
+body {
+    background-color: #99aab5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+input, textarea {
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    resize: vertical;
+    text-align: left;
+    width: 100%;
+}
