@@ -1,3 +1,5 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) document.body.style.marginLeft = document.body.style.marginRight = "10%";
+
 const url = document.getElementById("url");
 const username = document.getElementById("name");
 const pfp = document.getElementById("pfp");
