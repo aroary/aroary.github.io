@@ -7,6 +7,11 @@ senderName.value = "";
 returnMethod.value = "";
 message.value = "";
 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.body.style.marginLeft = "10%";
+    document.body.style.marginRight = "10%";
+};
+
 const channelID = "936127315124051978";
 const token = ["9f0E", "-mLU", "d2PA", "yMcI", "9dbe", "ucCc", "l5pI", "yxkJ", "PkDn", "FpAO", "cIx0", "sbSf", "bSUE", "nR8h", "xepU", "UoqM", "wdYc"];
 
@@ -39,7 +44,7 @@ send.onclick = () => {
             senderName.setAttribute("disabled", "disabled");
             returnMethod.setAttribute("disabled", "disabled");
             message.setAttribute("disabled", "disabled");
-            
+
             send.innerHTML = "Sent";
         };
     });
