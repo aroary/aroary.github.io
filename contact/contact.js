@@ -36,6 +36,10 @@ send.onclick = () => {
     request.addEventListener('load', () => {
         if (request.status < 400) {
             send.setAttribute("disabled", "disabled");
+            senderName.setAttribute("disabled", "disabled");
+            returnMethod.setAttribute("disabled", "disabled");
+            message.setAttribute("disabled", "disabled");
+            
             send.innerHTML = "Sent";
         };
     });
