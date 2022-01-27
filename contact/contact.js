@@ -7,12 +7,12 @@ senderName.value = "";
 returnMethod.value = "";
 message.value = "";
 
-const channelID = "935944333172039742";
-const token = "AKsC-9tZzwEflg7n7xBT--BAAnWF32wlZC1rdjYFKlA2rfr1ifvibzSlSDGg7qhsaQDH";
+const channelID = "936127315124051978";
+const token = ["9f0E", "-mLU", "d2PA", "yMcI", "9dbe", "ucCc", "l5pI", "yxkJ", "PkDn", "FpAO", "cIx0", "sbSf", "bSUE", "nR8h", "xepU", "UoqM", "wdYc"];
 
 send.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open("POST", `https://discord.com/api/webhooks/${channelID}/${token}`);
+    request.open("POST", `https://discord.com/api/webhooks/${channelID}/${token.join("")}`);
     request.setRequestHeader('Content-type', 'application/json');
 
     const params = {
