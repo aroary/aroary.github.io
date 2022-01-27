@@ -54,18 +54,7 @@ else {
 function clear() {
     content.value = '';
 
-    if (embed) {
-        embedTitle.value = "";
-        embedURL.value = "";
-        // embedColor.value = "";
-        embedDescription.value = "";
-        embedFooter.value = "";
-        embedFooterIcon.value = "";
-        embedImage.value = "";
-        embedThumbnail.value = "";
-        embedAuthor.value = "";
-        embedAuthorIcon.value = "";
-    };
+    if (embed) embedTitle.value = embedURL.value = embedColor.value = embedDescription.value = embedFooter.value = embedFooterIcon.value = embedImage.value = embedThumbnail.value = embedAuthor.value = embedAuthorIcon.value = "";
 };
 
 function sendMessage(_ = null, webHookURL = "", parameters = null) {
