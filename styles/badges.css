@@ -1,8 +1,14 @@
+body {
+    background-color: #99aab5;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
 main {
     padding: 50px;
 }
 
 main > a > img {
+    background-color: white;
     height: 50px;
     padding: 10px;
     -webkit-box-shadow: 0 8px 6px -6px black;
