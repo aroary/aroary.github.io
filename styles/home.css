@@ -1,14 +1,26 @@
 header {
+    padding: 10px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 60;
+    overflow: hidden;
 }
 
-header > image {
-    position: absolute;
-    top: 5;
-    left: 5;
-    bottom: 5;
+header > img {
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    height: 100%;
+}
+
+header > div {
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+}
+
+header > div > a {
+    padding-left: 5%;
 }
