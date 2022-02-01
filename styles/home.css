@@ -17,7 +17,7 @@ header {
     overflow: hidden;
 }
 
-header > img {
+header img {
     vertical-align: middle;
     display: inline-block;
     border-radius: 50%;
