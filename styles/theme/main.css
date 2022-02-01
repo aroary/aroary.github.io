@@ -2,7 +2,7 @@ main {
     text-align: justify;
     height: auto;
     position: absolute;
-    top: 50;
+    top: 50px;
     left: 0;
     right: 0;
 }
