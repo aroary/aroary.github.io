@@ -3,6 +3,7 @@ main {
 }
 
 main > img {
-    height: 50px;
-    padding: 10px;
+    height: 100px;
+    padding: 50px;
+    display: inline-block;
 }
