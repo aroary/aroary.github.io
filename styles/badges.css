@@ -10,7 +10,7 @@ main {
 main > a > img {
     background-color: white;
     border: 5px solid transparent;
-    border-radius: 50%;
+    border-radius: 10%;
     height: 50px;
     padding: 10px;
     -webkit-box-shadow: 0 8px 6px -6px black;
