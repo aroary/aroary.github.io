@@ -2,10 +2,6 @@ main {
     padding: 50px;
 }
 
-main > a {
-    display: inline-block;
-}
-
 main > a > img {
     height: 100px;
     padding: 20px;

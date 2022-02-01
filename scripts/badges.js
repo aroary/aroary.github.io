@@ -38,7 +38,5 @@
     img.src = badge.img;
     img.alt = badge.alt;
     link.appendChild(img);
-    const br = document.createElement("br");
     document.getElementsByTagName("main")[0].appendChild(link);
-    document.getElementsByTagName("main")[0].appendChild(br);
 });
