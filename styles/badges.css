@@ -4,12 +4,15 @@ body {
 }
 
 main {
-    padding: 50px;
+    padding: 20px;
 }
 
-main > a > img {
+main > span {
+    padding: 10px;
+}
+
+main > span > a > img {
     background-color: white;
-    border: 5px solid transparent;
     border-radius: 10%;
     height: 50px;
     padding: 10px;

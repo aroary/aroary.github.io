@@ -32,11 +32,13 @@
     { link: "", img: "https://img.shields.io/badge/Google-fff?style=1&logo=google", alt: "Google" },
     { link: "", img: "https://img.shields.io/badge/Assistant-fff?style=1&logo=google-assistant", alt: "Google Assistant" }
 ].forEach(badge => {
+    const span = document.createElement("span");
     const link = document.createElement("a");
     link.href = badge.link;
     const img = document.createElement("img");
     img.src = badge.img;
     img.alt = badge.alt;
     link.appendChild(img);
-    document.getElementsByTagName("main")[0].appendChild(link);
+    span.appendChild(link);
+    document.getElementsByTagName("main")[0].appendChild(span);
 });
