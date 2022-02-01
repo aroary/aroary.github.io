@@ -1,4 +1,4 @@
-const badges = [
+[
     { link: "https://github.com/aroary/", img: "https://gpvc.arturio.dev/aroary", alt: "Profile views" },
     { link: "https://github.com/aroary", img: "https://img.shields.io/badge/school-student-white.svg", alt: "Generic badge" },
     { link: "", img: "https://img.shields.io/badge/Markdown-000000?style=1&logo=markdown&logoColor=white", alt: "Markdown" },
@@ -31,9 +31,7 @@ const badges = [
     { link: "https://www.mozilla.org/en-US/firefox/new", img: "https://img.shields.io/badge/Firefox-203FB6?style=1&logo=firefox", alt: "Firefox" },
     { link: "", img: "https://img.shields.io/badge/Google-fff?style=1&logo=google", alt: "Google" },
     { link: "", img: "https://img.shields.io/badge/Assistant-fff?style=1&logo=google-assistant", alt: "Google Assistant" }
-];
-
-badges.forEach(badge => {
+].forEach(badge => {
     const link = document.createElement("a");
     link.href = badge.link;
     const img = document.createElement("img");

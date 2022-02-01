@@ -1,14 +1,8 @@
-body { background-color: aliceblue; color: black; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
-/* header and footer */
-body header { background-color: #040F0F; color: #2f97c1; width: 100%; padding: 10px; }
-body header span { padding-left: 100px; font-size: 36px; vertical-align: top; }
-body header a { color: #2F97C1; text-decoration: none; }
-body header a:hover { color: #2F57C1; }
-body footer { background-color: #040F0F; color: #00F075; width: 100%; padding: 20px; line-height: 200%; }
-body footer span { padding-left: 25px; padding-right: 25px; font-size: 12px; }
-body footer a { color: #00F075; text-decoration: none; }
-body footer a:hover { color: #009075; }
-body footer code,body header code { user-select: all; }
-body footer code:hover,body header code:hover{ background-color: rgba(0, 0, 0, 0.5); }
-/* header and footer */
-main { margin-left: 20%; margin-right: 20%; text-align: center; max-width: 40%; }
+main {
+    padding: 50px;
+}
+
+main > img {
+    height: 50px;
+    padding: 10px;
+}
