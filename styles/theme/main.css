@@ -1,8 +1,23 @@
 main {
     text-align: justify;
+    padding: 10px;
     height: auto;
     position: absolute;
     top: 50px;
     left: 0;
     right: 0;
+}
+
+main > div:nth-child(odd) {
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+main > div:nth-child(even) {
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
 }
