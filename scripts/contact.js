@@ -1,4 +1,4 @@
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) document.body.style.marginLeft = document.body.style.marginRight = "10%";
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) document.getElementsByTagName("main")[0].style.marginLeft = document.getElementsByTagName("main")[0].style.marginRight = "10%";
 
 const senderName = document.getElementById("name");
 const returnMethod = document.getElementById("return");
