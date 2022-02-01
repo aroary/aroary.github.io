@@ -2,7 +2,7 @@ main {
     padding: 50px;
 }
 
-main > img {
+main > a {
     height: 100px;
     padding: 50px;
     display: inline-block;
