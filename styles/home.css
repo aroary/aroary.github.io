@@ -1,4 +1,13 @@
+body {
+    background-color: #99aab5;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
 header {
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
     padding: 10px;
     height: 50px;
     position: absolute;
