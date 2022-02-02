@@ -19,13 +19,9 @@ header img {
     height: 100%;
 }
 
-header img:first {
-    border: 2px solid #99aab5;
-}
-
 header img:hover {
+    background-color: darkgrey;
     border-radius: 25%;
-    border: 2px solid #99aab5;
 }
 
 header > div {
