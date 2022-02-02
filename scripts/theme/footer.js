@@ -7,7 +7,7 @@ function setFooter() {
         document.documentElement.offsetHeight
     ];
 
-    document.getElementsByTagName("footer")[0].style.bottom = `${Math.max(...items)}px`;
+    document.getElementsByTagName("footer")[0].style.top = `${Math.max(...items)}px`;
 };
 
 setFooter();
