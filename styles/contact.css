@@ -9,7 +9,7 @@ body > main {
     text-align: center;
 }
 
-body > p {
+main > p {
     text-align: left;
 }
 
