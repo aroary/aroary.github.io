@@ -4,18 +4,23 @@ body {
 }
 
 main {
-    padding: 20px;
+    margin: 10%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 main > a > img {
     background-color: white;
-    border-radius: 10%;
+    border-radius: 25%;
     height: 50px;
     padding: 10px;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
+}
+
+main > a > img:hover {
+    background-color: black;
 }
