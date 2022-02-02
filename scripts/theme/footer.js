@@ -10,4 +10,6 @@ function setFooter() {
     document.getElementsByTagName("footer")[0].style.top = `${Math.max(...items)}px`;
 };
 
+setFooter();
+
 window.onresize = window.onload =  () => setFooter();
