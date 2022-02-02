@@ -6,10 +6,19 @@ body {
 main {
     margin-left: 25%;
     margin-right: 25%;
+    text-align: center;
 }
 
-main > img {
+main img {
+    width: 50%;
+}
+
+main > .stats {
     width: 80%;
+}
+
+main > p {
+    text-align: justify;
 }
 
 main > h6 {
