@@ -8,8 +8,12 @@ main {
     margin-right: 25%;
 }
 
-main > img {
-    height: 150px;
+main > .image {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+main > .image > img {
+    height: 150px;
 }
