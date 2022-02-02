@@ -8,6 +8,10 @@ main {
     margin-right: 25%;
 }
 
+main > img {
+    width: 80%;
+}
+
 main > h6 {
     text-align: right;
 }
