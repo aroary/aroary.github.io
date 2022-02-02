@@ -9,8 +9,12 @@ main {
     text-align: center;
 }
 
-main img {
+main > img {
     width: 50%;
+}
+
+main > img:not(.stats) {
+    border-radius: 10%;
 }
 
 main > .stats {
