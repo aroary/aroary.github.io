@@ -2,3 +2,15 @@ body {
     background-color: #99aab5;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
+
+main {
+
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+main > img {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
