@@ -1,3 +1,5 @@
+optomizeMarginForAgent(document.getElementsByTagName("main")[0], 10, 10);
+
 [
     { link: "https://github.com/aroary/", img: "https://gpvc.arturio.dev/aroary", alt: "Profile views" },
     { link: "https://github.com/aroary", img: "https://img.shields.io/badge/school-student-white.svg", alt: "Generic badge" },
