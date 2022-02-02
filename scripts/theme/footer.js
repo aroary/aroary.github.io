@@ -1,9 +1,13 @@
-const items = [
-    document.body.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.clientHeight,
-    document.documentElement.scrollHeight,
-    document.documentElement.offsetHeight   
-];
+function setFooter() {
+    const items = [
+        document.body.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.clientHeight,
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight
+    ];
 
-document.getElementsByTagName("footer")[0].style.top = `${Math.max(...items)}px`;
+    document.getElementsByTagName("footer")[0].style.top = `${Math.max(...items)}px`;
+};
+
+window.onresize = window.onload =  () => setFooter();
