@@ -9,6 +9,10 @@ body > main {
     text-align: center;
 }
 
+body > p {
+    text-align: left;
+}
+
 input, textarea {
     border: none;
     margin-top: 1px;
