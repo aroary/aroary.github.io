@@ -15,12 +15,19 @@ header {
 header img {
     vertical-align: middle;
     display: inline-block;
-    border-radius: 50%;
     height: 100%;
 }
 
 header img:hover {
     background-color: darkgrey;
+    border-radius: 25%;
+}
+
+#pfp {
+    border-radius: 50%;
+}
+
+#pfp:hover {
     border-radius: 25%;
 }
 
