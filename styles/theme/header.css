@@ -26,6 +26,11 @@ header img {
     height: 100%;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+}
+
 header h1 {
     line-height: 0;
     height: 0;
@@ -40,7 +45,7 @@ header h1 {
     border-radius: 50%;
 }
 
-#logo img:hover {
+#logo a:hover {
     border-radius: 25%;
 }
 
