@@ -11,26 +11,3 @@ footer {
     right: 0;
     overflow: hidden;
 }
-
-footer img {
-    vertical-align: middle;
-    display: inline-block;
-    border-radius: 50%;
-    height: 100%;
-}
-
-footer img:hover {
-    background-color: darkgrey;
-    border-radius: 25%;
-}
-
-footer > div {
-    display: inline-block;
-    text-align: center;
-    width: 70%;
-}
-
-footer > div > a {
-    padding-left: 2%;
-    padding-right: 2%;
-}

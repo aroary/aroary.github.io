@@ -10,9 +10,50 @@ header {
     left: 0;
     right: 0;
     overflow: hidden;
+    text-align: center;
+}
+
+header > span {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
 }
 
 header img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+}
+
+header h3 {
+    display: inline-block;
+}
+
+#logo {
+    text-align: left;
+}
+
+#logo img {
+    border-radius: 50%;
+}
+
+#logo img:hover {
+    border-radius: 25%;
+}
+
+#navigation > a {
+    border-radius: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#navigation > a:hover {
+    background-color: darkgrey;
+}
+
+#social > img {
+    text-align: right;
     vertical-align: middle;
     display: inline-block;
     height: 100%;
@@ -23,21 +64,6 @@ header img:hover {
     border-radius: 25%;
 }
 
-header #pfp {
-    border-radius: 50%;
-}
-
 header #pfp:hover {
     border-radius: 25%;
-}
-
-header > div {
-    display: inline-block;
-    text-align: center;
-    width: 70%;
-}
-
-header > div > a {
-    padding-left: 2%;
-    padding-right: 2%;
 }
