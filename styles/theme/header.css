@@ -14,6 +14,7 @@ header {
 }
 
 header > span {
+    vertical-align: middle;
     display: inline-block;
     width: 33%;
     height: 100%;
@@ -22,7 +23,6 @@ header > span {
 header img {
     vertical-align: middle;
     display: inline-block;
-    width: 50px;
     height: 100%;
 }
 
@@ -54,18 +54,11 @@ header h1 {
     background-color: darkgrey;
 }
 
-#social > img {
+#social {
     text-align: right;
-    vertical-align: middle;
-    display: inline-block;
-    height: 100%;
 }
 
 header img:hover {
     background-color: darkgrey;
-    border-radius: 25%;
-}
-
-header #pfp:hover {
     border-radius: 25%;
 }
