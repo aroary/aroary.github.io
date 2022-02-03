@@ -12,4 +12,8 @@ function setFooter() {
 
 setFooter();
 
-window.onresize = window.onload =  () => setFooter();
+window.onresize = window.onload =  () => {
+    document.getElementsByTagName("footer")[0].style.display = "none";
+    setFooter();
+    document.getElementsByTagName("footer")[0].style.display = "block";
+}
