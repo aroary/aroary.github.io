@@ -34,7 +34,7 @@ header #pfp:hover {
 header > div {
     display: inline-block;
     text-align: center;
-    width: 70%;
+    width: auto;
 }
 
 header > div > a {
