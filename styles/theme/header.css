@@ -26,7 +26,9 @@ header img {
     height: 100%;
 }
 
-header h3 {
+header h1 {
+    line-height: 0;
+    height: 0;
     display: inline-block;
 }
 
