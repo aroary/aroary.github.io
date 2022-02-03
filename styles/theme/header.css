@@ -23,11 +23,11 @@ header img:hover {
     border-radius: 25%;
 }
 
-#pfp {
+header #pfp {
     border-radius: 50%;
 }
 
-#pfp:hover {
+header #pfp:hover {
     border-radius: 25%;
 }
 
