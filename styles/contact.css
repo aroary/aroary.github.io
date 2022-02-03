@@ -14,9 +14,9 @@ main > p {
 }
 
 input, textarea {
-    -moz-box-shadow: inset 0 0 3px black;
-    -webkit-box-shadow: inset 0 0 3px black;
-    box-shadow: inset 0 0 3px black;
+    -moz-box-shadow: inset 0 0 6px black;
+    -webkit-box-shadow: inset 0 0 6px black;
+    box-shadow: inset 0 0 6px black;
     border: none;
     margin-top: 1px;
     margin-bottom: 1px;
