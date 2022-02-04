@@ -24,3 +24,8 @@ input, textarea {
     text-align: left;
     width: 100%;
 }
+
+ul {
+    margin-left: 10%;
+    margin-right: 10%;
+}
