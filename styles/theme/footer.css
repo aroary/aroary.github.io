@@ -12,3 +12,13 @@ footer {
     overflow: hidden;
     display: none;
 }
+
+footer > table {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer > table h6 {
+    text-align: right;
+}
