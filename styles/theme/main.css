@@ -10,15 +10,9 @@ main {
     right: 0;
 }
 
-main > div:nth-child(odd) {
+main > div {
     background-color: white;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
-}
-
-main > div:nth-child(even) {
-    background-color: white;
+    border-radius: 5%;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
@@ -31,6 +25,7 @@ main > img {
 }
 
 main code {
+    background-color: rgba(0, 0, 0, 0.25);
     -webkit-user-select: all;
     -moz-user-select: all;
     -ms-user-select: all;

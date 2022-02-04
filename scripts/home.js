@@ -1,1 +1,1 @@
-optomizeMarginForAgent(document.getElementsByTagName("main")[0], 5, 5);
+optomizeMarginForAgent(document.getElementsByTagName("main")[0], 10, 10);
