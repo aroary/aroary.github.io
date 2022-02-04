@@ -19,6 +19,14 @@ footer > table {
     border: none;
 }
 
+footer > table td {
+    padding: 0;
+}
+
+footer > table .column {
+    vertical-align: top;
+}
+
 footer > table h6 {
     text-align: right;
 }
