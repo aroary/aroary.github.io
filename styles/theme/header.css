@@ -14,7 +14,6 @@ header {
 }
 
 header > span {
-    vertical-align: middle;
     display: inline-block;
     width: 33%;
     height: 100%;
