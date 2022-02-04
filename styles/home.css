@@ -9,7 +9,7 @@ main {
     text-align: center;
 }
 
-main > p {
+main p {
     text-align: justify;
 }
 
