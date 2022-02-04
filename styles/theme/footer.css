@@ -21,10 +21,7 @@ footer > table {
 
 footer > table td {
     padding: 0;
-}
-
-footer > table .column {
-    vertical-align: top;
+    margin: 0;
 }
 
 footer > table h6 {
