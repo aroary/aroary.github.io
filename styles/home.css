@@ -9,6 +9,10 @@ main {
     text-align: center;
 }
 
+main > img {
+    width: 50%;
+}
+
 main p {
     text-align: justify;
 }
