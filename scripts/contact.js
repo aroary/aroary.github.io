@@ -4,6 +4,8 @@ const senderName = document.getElementById("name");
 const returnMethod = document.getElementById("return");
 const message = document.getElementById("message");
 const send = document.getElementById("send");
+const urgent = document.getElementById("urgent");
+const important = document.getElementById("important");
 
 senderName.value = returnMethod.value = message.value = "";
 
@@ -18,7 +20,7 @@ send.onclick = () => {
     const params = {
         username: null,
         avatar_url: null,
-        content: `${document.getElementById("urgent").checked ? " @everyone" : ""}${document.getElementById("important").checked ? " @here" : ""}` || null,
+        content: `${urgent ? " @everyone" : ""}${important.checked ? " @here" : ""}` || null,
         embeds: [
             {
                 author: {
