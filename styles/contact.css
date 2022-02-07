@@ -13,7 +13,7 @@ main > p {
     text-align: left;
 }
 
-input, textarea {
+input:not(#urgent):not(#important), textarea {
     -moz-box-shadow: inset 0 0 6px black;
     -webkit-box-shadow: inset 0 0 6px black;
     box-shadow: inset 0 0 6px black;

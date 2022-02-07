@@ -18,7 +18,7 @@ send.onclick = () => {
     const params = {
         username: null,
         avatar_url: null,
-        content: null,
+        content: `${document.getElementById("urgent").checked ? " @everyone" : ""}${document.getElementById("important").checked ? " @here" : ""}` || null,
         embeds: [
             {
                 author: {
