@@ -57,7 +57,7 @@ header h1 {
     border-radius: 50%;
 }
 
-#logo a:hover {
+#logo img:hover {
     border-radius: 25%;
 }
 
