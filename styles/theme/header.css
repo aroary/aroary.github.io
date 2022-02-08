@@ -63,19 +63,18 @@ header h1 {
 
 #navigation > a {
     border-radius: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #navigation > a:hover {
-    background-color: darkgrey;
+    background-color: #99aab5;
 }
 
 #social {
     text-align: right;
 }
 
-header img:hover {
-    background-color: darkgrey;
-    border-radius: 25%;
+#social img:hover {
+    height: 90%;
 }
