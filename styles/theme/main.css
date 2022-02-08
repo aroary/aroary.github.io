@@ -40,7 +40,7 @@ main img:hover {
 }
 
 main code {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.125);
     padding-left: 2px;
     padding-right: 2px;
     -webkit-user-select: all;
