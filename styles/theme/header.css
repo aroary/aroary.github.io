@@ -17,7 +17,7 @@ header {
     right: 0;
     overflow: hidden;
     text-align: center;
-    white-space:nowrap ;
+    white-space: nowrap;
 }
 
 header > span {
