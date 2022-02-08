@@ -20,6 +20,12 @@ header {
     white-space: nowrap;
 }
 
+header:hover {
+    -webkit-box-shadow: 0 10px 6px -6px black;
+    -moz-box-shadow: 0 10px 6px -6px black;
+	box-shadow: 0 10px 6px -6px black;
+}
+
 header > span {
     display: inline-block;
     width: 33%;
