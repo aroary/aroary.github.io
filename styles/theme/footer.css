@@ -11,6 +11,7 @@ footer {
     right: 0;
     overflow: hidden;
     display: none;
+    vertical-align: top;
 }
 
 footer:hover {
@@ -19,17 +20,13 @@ footer:hover {
 	box-shadow: inset 0 10px 6px -6px black;
 }
 
-footer > table {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-footer > table td {
-    padding: 0;
-    margin: 0;
-}
-
-footer > table h6 {
+footer > h5 {
+    position: absolute;
+    top: -5px;
+    right: 20px;
     text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
