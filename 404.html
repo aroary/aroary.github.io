@@ -11,7 +11,19 @@
     </head>
     <body>
         <script>
-            window.location.replace("https://aroary.github.io/")
+            switch (window.location.pathname) {
+                case "bypass":
+                    window.location.replace("https://yeshivaschools.github.io/bypass/bypass.html");
+                    break;
+
+                case "discord":
+                    window.location.replace("https://discord.gg/d39DnYurrU");
+                    break;
+
+                default:
+                    window.location.replace("https://aroary.github.io/");
+                    break;
+            };
         </script>
     </body>
 </html>
