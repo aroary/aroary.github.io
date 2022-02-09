@@ -25,6 +25,10 @@ main > div:hover {
 	box-shadow: 0 10px 6px -6px black;
 }
 
+main p {
+    text-indent: 50px;
+}
+
 main img {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
