@@ -1,1 +1,31 @@
-a { color: black; text-decoration: none; }
+body {
+    background-color: beige;
+    color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h5, h6 {
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: black;
+}
+
+img {
+    max-height: 100px;
+}
+
+/* table {
+    position: absolute;
+    top: 0;
+} */
