@@ -25,7 +25,9 @@ img {
     max-height: 100px;
 }
 
-/* table {
-    position: absolute;
+table {
+    border: 1px solid black;
+    /* position: absolute;
     top: 0;
-} */
+    left: 0; */
+}
