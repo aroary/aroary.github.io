@@ -1,12 +1,14 @@
 body {
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: white;
     color: black;
     margin: 0;
     padding: 10px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     text-align: center;
+    margin: 0;
 }
 
 h5, h6 {
@@ -18,16 +20,51 @@ p {
 }
 
 a {
-    color: black;
+    color: navy;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+}
+
+ul > li {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 img {
     max-height: 100px;
 }
 
+code {
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
 table {
     border: 1px solid black;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+    table {
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+table .seperator {
+    padding: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
