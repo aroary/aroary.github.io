@@ -82,6 +82,12 @@ table {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    #logo {
+        display: none;
+    }
+}
+
 table .seperator {
     padding: 0;
     border-left: 1px solid black;
