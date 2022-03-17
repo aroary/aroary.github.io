@@ -93,3 +93,21 @@ table .seperator {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
+
+.project {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+/* .lorem_ipsum {
+    background-image: url("../media/logos/lorem_ipsum.png");
+} */
+
+/* .github {
+    background-image: url("../media/github-dark.png");
+} */
+
+/* .discord {
+    background-image: url("../media/discord-dark.png");
+} */
