@@ -37,7 +37,7 @@ send.onclick = () => {
     request.send(JSON.stringify(params));
     request.addEventListener('load', () => {
         if (request.status < 400) {
-            [send, senderName, returnMethod, message].forEach(input => input.setAttribute("disabled", "disabled"));
+            [send, senderName, returnMethod, message, urgent, important].forEach(input => input.setAttribute("disabled", "disabled"));
             send.innerHTML = "Sent";
         };
     });
