@@ -17,6 +17,7 @@ main p {
     text-align: justify;
 }
 
-main > h6 {
+main h6 {
     text-align: right;
+    padding: 10px;
 }
