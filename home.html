@@ -24,26 +24,14 @@
 		<link rel="stylesheet" href="./styles/theme/footer.css">
 		<link rel="stylesheet" href="./styles/home.css">
 		<!-- Scripts -->
+		<script src="./scripts/template.js" defer></script>
 		<script src="./scripts/theme/miniGame.js" defer></script>
 		<script src="./scripts/mobile.js" defer></script>
 		<script src="./scripts/theme/footer.js" defer></script>
 		<script src="./scripts/home.js" defer></script>
 	</head>
 	<body>
-		<header>
-            <span id="logo">
-                <a href="./home.html" title="That is me">
-					<img id="pfp" src="./media/tenor.gif" alt="profile image" draggable="false">
-					<h1>aroary</h1>
-				</a>
-            </span>
-			<span id="navigation">
-				<a href="./home.html">Home</a> | <a href="./contact.html">Contact</a>
-			</span>
-            <span id="social">
-                <a href="https://aroary.com/aroary/" target="_blank" rel="noopener noreferrer"><img src="./media/github-dark.png" alt="GitHub"></a>
-            </span>
-		</header>
+		<header include="./templates/header.html"></header>
 		<main>
 			<img src="./media/tenor.gif" alt="aroary" draggable="false">
 			<div>
@@ -61,8 +49,6 @@
 				</div>
 			</div>
 		</main>
-		<footer>
-			<h5 title="- aroary"><i>If you have a problem feel free to fix it™</i><br>- aroary</h5>
-		</footer>
+		<footer include="./templates/footer.html"></footer>
 	</body>
 </html>
