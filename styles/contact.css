@@ -14,7 +14,6 @@ main > p {
 }
 
 input:not(#urgent):not(#important), textarea {
-    -moz-box-shadow: inset 0 0 6px black;
     -webkit-box-shadow: inset 0 0 6px black;
     box-shadow: inset 0 0 6px black;
     border-radius: 10px;
@@ -28,7 +27,6 @@ input:not(#urgent):not(#important), textarea {
 }
 
 input:not(#urgent):not(#important):hover, textarea:hover {
-    -moz-box-shadow: inset 0 0 10px black;
     -webkit-box-shadow: inset 0 0 10px black;
     box-shadow: inset 0 0 10px black;
 }
@@ -40,7 +38,6 @@ ul {
 }
 
 li:hover {
-    -moz-box-shadow: inset 0 0 6px black;
     -webkit-box-shadow: inset 0 0 6px black;
     box-shadow: inset 0 0 6px black;
 }
