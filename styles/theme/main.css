@@ -19,13 +19,13 @@ main > div {
     border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;
 }
 
 main > div:hover {
-    -webkit-box-shadow: 0 10px 6px -6px black;
-	box-shadow: 0 10px 6px -6px black;
+    -webkit-box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px black;
 }
 
 main > div > div {
@@ -50,15 +50,16 @@ main p {
 }
 
 main img {
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 6px black;
+	box-shadow: 0 0 6px black;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 main img:hover {
-    -webkit-box-shadow: 0 10px 6px -6px black;
-	box-shadow: 0 10px 6px -6px black;
+    -webkit-box-shadow: 0 08px black;
+	box-shadow: 0 0 8px black;
 }
 
 main code {
