@@ -9,6 +9,33 @@ main {
     text-align: center;
 }
 
+main > div {
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;
+}
+
+main > div:hover {
+    -webkit-box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px black;
+}
+
+main > div > div {
+    padding: 30px;
+}
+
+main > div > h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: inset 0 10px 6px -10px black, inset 0 -10px 6px -10px black;
+    box-shadow: inset 0 10px 6px -10px black, inset 0 -10px 6px -10px black;
+    background-color:  #99aab5;
+    width: 100%;
+}
+
 main > img {
     width: 50%;
 }
