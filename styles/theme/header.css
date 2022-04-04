@@ -72,8 +72,11 @@ header h1 {
 }
 
 #social {
-    border-radius: 50%;
     text-align: right;
+}
+
+#socail img {
+    border-radius: 50%;
 }
 
 #social img:hover {
