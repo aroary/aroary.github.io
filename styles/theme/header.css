@@ -72,6 +72,7 @@ header h1 {
 }
 
 #social {
+    border-radius: 50%;
     text-align: right;
 }
 
