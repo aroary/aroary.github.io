@@ -1,6 +1,9 @@
 body {
     /* background-color: beige; */
     background-color: white;
+    background-image: url(../media/paper.bmp);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
     margin: 0;
     padding: 10px;
@@ -99,15 +102,3 @@ table .seperator {
     background-position: right;
     background-size: contain;
 }
-
-/* .lorem_ipsum {
-    background-image: url("../media/logos/lorem_ipsum.png");
-} */
-
-/* .github {
-    background-image: url("../media/github-dark.png");
-} */
-
-/* .discord {
-    background-image: url("../media/discord-dark.png");
-} */
