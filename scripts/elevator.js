@@ -1,4 +1,4 @@
-setTimeout(() => {
+if (document.getElementById("elevator")) {
     document.getElementById("elevator").src = "./media/elevator/open.gif";
     [...document.getElementsByTagName("a")].forEach(element => {
         element.onclick = e => {
@@ -10,4 +10,4 @@ setTimeout(() => {
             }, 4000);
         };
     });
-}, 4000);
+};

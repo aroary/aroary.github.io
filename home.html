@@ -32,7 +32,20 @@
 		<script src="./scripts/elevator.js" defer></script>
 	</head>
 	<body>
-		<header include="./templates/header.html"></header>
+		<header>
+			<span id="logo">
+				<a href="./home.html">
+					<img id="pfp" src="./media/tenor.gif" alt="profile image">
+					<h1>aroary</h1>
+				</a>
+			</span>
+			<span id="navigation">
+				<a href="./home.html">Home</a> | <a href="./contact.html">Contact</a>
+			</span>
+			<span id="social">
+				<a href="https://aroary.com/aroary/" target="_blank" rel="noopener noreferrer"><img src="./media/github-dark.png" alt="GitHub"></a>
+			</span>
+		</header>
 		<main>
 			<img src="./media/tenor.gif" alt="aroary" draggable="false">
 			<div>
@@ -50,7 +63,9 @@
 				</div>
 			</div>
 		</main>
-		<footer include="./templates/footer.html"></footer>
+		<footer>
+			<h5 title="- aroary"><i>If you have a problem feel free to fix it™</i><br>- aroary</h5>
+		</footer>
 		<img id="elevator" credit="https://gifer.com/embed/MoMi">
 	</body>
 </html>
