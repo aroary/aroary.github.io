@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="200px">
+    <metadata>
+        <rdf:RDF xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:work rdf:about="">
+                <cc:license>
+                    <cc:prohibits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+                    <cc:prohibits rdf:resource="http://web.resource.org/cc/Distribution"/>
+                </cc:license>
+            </cc:work>
+        </rdf:RDF>
+    </metadata>
+    <defs>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap');
+        </style>
+        <filter id="shadow">
+           <feOffset result="offOut" in="SourceAlpha"/>
+           <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5"/>
+           <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <rect x="5" y="5" rx="25" width="390" height="190" filter="url(#shadow)" style="fill:white;"/>
+    <text x="50%" y="45%" text-anchor="middle" style="font-family:'Dancing Script',cursive;">
+        If you have a problem feel free to fix it™
+    </text>
+    <text x="50%" y="60%" text-anchor="middle" style="font-family:'Dancing Script',cursive;">
+        - aroary
+    </text>
+</svg>
