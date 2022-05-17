@@ -1,0 +1,28 @@
+body {
+    background-color: #b59999;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+main {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+#quote {
+    background-color: white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#quote:hover {
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
