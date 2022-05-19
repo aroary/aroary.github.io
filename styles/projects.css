@@ -15,7 +15,7 @@ main > div {
     flex-wrap: wrap;
 }
 
-.proj {
+.projectect {
     background-color: white;
     border: 1px solid black;
     width: 400px;
@@ -26,33 +26,33 @@ main > div {
     position: relative;
 }
 
-.proj > div {
+.project > div {
     padding: 20px;
 }
 
-.proj p {
+.project p {
     text-align: left;
 }
 
-.proj button {
+.project button {
     background-color: #99aab5;
     border: none;
     border-radius: 5px;
     padding: 5px;
 }
 
-.proj button:hover {
+.project button:hover {
     background-color: #b59999;
     border-radius: 5px;
     padding: 5px;
 }
 
-.proj img {
+.project img {
     background-color: #99aab5;
     width: 100%;
 }
 
-.proj:hover {
+.project:hover {
     -webkit-box-shadow: 0 0 10px black;
 	box-shadow: 0 0 10px black;
 }
