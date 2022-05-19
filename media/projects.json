@@ -1,0 +1,52 @@
+[
+    {
+        "title": "lorem ipsum",
+        "description": "lorem ipsum generator to generate placeholder text in your code. Quickly insert placeholder text using a simple command.",
+        "resources": [
+            {
+                "name": "GitHub",
+                "value": "https://github.com/aroary/lorem_ipsum"
+            },
+            {
+                "name": "Marketplace",
+                "value": "https://marketplace.visualstudio.com/items?itemName=aroary.loremipsum"
+            }
+        ],
+        "icon": {
+            "image": "/media/logos/lorem_ipsum.png",
+            "url": "https://aroary.com/lorem_ipsum/"
+        }
+    },
+    {
+        "title": "Website",
+        "description": "My website, the place where I show my projects. Hosted on GitHub Pages at aroary.com.",
+        "resources": [
+            {
+                "name": "GitHub",
+                "value": "https://github.com/aroary/aroary.github.io"
+            },
+            {
+                "name": "Website",
+                "value": "https://aroary.com"
+            }
+        ],
+        "icon": {
+            "image": "/media/logos/tenor.gif",
+            "url": "https://aroary.com/"
+        }
+    },
+    {
+        "title": "Disaccord",
+        "description": "A discord.js@13.1.0 bot template for interaction and event handling.",
+        "resources": [
+            {
+                "name": "GitHub",
+                "value": "http://https://github.com/aroary/disaccord"
+            }
+        ],
+        "icon": {
+            "image": "/media/logos/disaccord.png",
+            "url": "http://https://github.com/aroary/disaccord"
+        }
+    }
+]
