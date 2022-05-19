@@ -41,7 +41,13 @@ main > img {
 }
 
 main p {
+    background-color:  #99aab5;
+    -webkit-box-shadow: inset 0 0 6px black;
+    box-shadow: inset 0 0 6px black;
+    border-radius: 10px;
     text-align: justify;
+    padding: 10px;
+    text-indent: 50px;
 }
 
 main h6 {

@@ -1,0 +1,58 @@
+body {
+    background-color: #b59999;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+main {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+main > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proj {
+    background-color: white;
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.proj > div {
+    padding: 20px;
+}
+
+.proj p {
+    text-align: left;
+}
+
+.proj button {
+    background-color: #99aab5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.proj button:hover {
+    background-color: #b59999;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.proj img {
+    background-color: #99aab5;
+    width: 100%;
+}
+
+.proj:hover {
+    -webkit-box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px black;
+}
