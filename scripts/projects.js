@@ -48,3 +48,4 @@ projects.onload = () => {
         });
     };
 };
+projects.send();
