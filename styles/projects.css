@@ -39,6 +39,8 @@ main > div {
     border: none;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .project button:hover {
