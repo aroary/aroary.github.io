@@ -1,5 +1,5 @@
-@media only screen and (max-width: 500px) {
-    #logo > a > h1 {
+@media only screen and (max-width: 700px) {
+    #logo h1 {
         display: none;
     }
 }
@@ -25,16 +25,19 @@ header:hover {
 	box-shadow: 0 10px 6px -6px black;
 }
 
-header > span {
-    display: inline-block;
-    width: 33%;
+header > table {
+    width: 100%;
     height: 100%;
+    border-collapse: collapse;
 }
 
 header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
     vertical-align: middle;
     display: inline-block;
-    height: 100%;
 }
 
 header a {
@@ -48,38 +51,48 @@ header h1 {
     display: inline-block;
 }
 
-#logo {
-    text-align: left;
+header > table > tbody > tr > td {
+    width: calc(100% / 3);
 }
 
-#logo img {
-    border-radius: 50%;
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header nav a {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header nav ul > li {
+    display: inline;
+}
+
+#logo {
+    text-align: left;
 }
 
 #logo img:hover {
     border-radius: 25%;
 }
 
-#navigation > a {
-    border-radius: 5%;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-#navigation > a:hover {
+#navi a:hover {
     background-color:  #b59999;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
 }
 
-#social {
+#medi {
     text-align: right;
 }
 
-#socail img {
-    border-radius: 50%;
-}
-
-#social img:hover {
+#medi img:hover {
     background-color: #b59999;
 }
