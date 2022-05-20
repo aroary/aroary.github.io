@@ -45,12 +45,6 @@ header a {
     color: black;
 }
 
-header h1 {
-    line-height: 0;
-    height: 0;
-    display: inline-block;
-}
-
 header > table > tbody > tr > td {
     width: calc(100% / 3);
 }
