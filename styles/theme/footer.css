@@ -19,10 +19,34 @@ footer:hover {
 	box-shadow: inset 0 10px 6px -6px black;
 }
 
-footer > h5 {
-    position: absolute;
-    top: -5px;
-    right: 20px;
+footer table {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer tr {
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+}
+
+footer td {
+    width: calc(100% / 3);
+}
+
+#settings {
+    text-align: left;
+}
+
+#information {
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#quote {
     text-align: right;
     -webkit-user-select: none;
     -moz-user-select: none;

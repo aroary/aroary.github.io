@@ -45,6 +45,8 @@ projects.onload = () => {
             div.appendChild(imageLink);
 
             container.appendChild(div);
+
+            setFooter();
         });
     };
 };
