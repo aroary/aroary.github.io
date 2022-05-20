@@ -20,7 +20,7 @@ projects.onload = () => {
 
             project.resources.forEach(resource => {
                 const link = document.createElement('a');
-                link.href = resource.url;
+                link.href = resource.value;
                 link.target = '_blank';
                 link.rel = "noopener noreferrer";
                 link.innerHTML = resource.name;
