@@ -44,7 +44,7 @@ projects.onload = () => {
 
             div.appendChild(imageLink);
 
-            container.appendChild(div);
+            container.prepend(div);
 
             setFooter();
         });
