@@ -10,7 +10,7 @@ main {
     text-align: center;
 }
 
-#quote {
+#card {
     background-color: white;
     border-radius: 25px;
     -webkit-box-shadow: 0 0 8px black;
@@ -22,7 +22,7 @@ main {
     padding-right: 50px;
 }
 
-#quote:hover {
+#card:hover {
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
 }
