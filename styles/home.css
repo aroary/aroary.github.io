@@ -1,5 +1,5 @@
 body {
-    background-color: #b59999;
+    background-color: white;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
@@ -32,7 +32,7 @@ main > div > h2 {
     padding-bottom: 10px;
     -webkit-box-shadow: inset 0 10px 6px -10px black, inset 0 -10px 6px -10px black;
     box-shadow: inset 0 10px 6px -10px black, inset 0 -10px 6px -10px black;
-    background-color:  #99aab5;
+    background-color:  white;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@ main > img {
 }
 
 main p {
-    background-color:  #99aab5;
+    background-color:  white;
     -webkit-box-shadow: inset 0 0 6px black;
     box-shadow: inset 0 0 6px black;
     border-radius: 10px;

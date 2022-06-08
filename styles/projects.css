@@ -1,5 +1,5 @@
 body {
-    background-color: #b59999;
+    background-color: white;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
@@ -35,7 +35,7 @@ main > div {
 }
 
 .project button {
-    background-color: #99aab5;
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -44,13 +44,13 @@ main > div {
 }
 
 .project button:hover {
-    background-color: #b59999;
+    background-color: white;
     border-radius: 5px;
     padding: 5px;
 }
 
 .project img {
-    background-color: #99aab5;
+    background-color: white;
     width: 100%;
 }
 

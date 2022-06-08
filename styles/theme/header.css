@@ -78,7 +78,7 @@ header nav ul > li {
 }
 
 #navi a:hover {
-    background-color:  #b59999;
+    background-color:  white;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
 }
@@ -88,5 +88,5 @@ header nav ul > li {
 }
 
 #medi img:hover {
-    background-color: #b59999;
+    background-color: white;
 }
