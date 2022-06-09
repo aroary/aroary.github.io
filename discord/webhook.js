@@ -156,7 +156,7 @@ generate.onclick = () => {
     if (embedAuthor.value) generated.value += encodeURI(`author=${embedAuthor.value}&`);
     if (embedAuthorIcon.value) generated.value += encodeURI(`authorIcon=${embedAuthorIcon.value}&`);
 };
-openGenerated.onclick = () => window.location.href = generated.value || `${window.location.protocol}//${window.location.hostname}${window.location.pathname}?`;
+openGenerated.onclick = () => window.location.href = generated.value;
 copy.onclick = () => navigator.clipboard.writeText(generated.value);
 
 url.onchange = e => document.cookie = e.target.value;
