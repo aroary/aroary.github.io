@@ -41,12 +41,12 @@
         "resources": [
             {
                 "name": "GitHub",
-                "value": "http://https://github.com/aroary/disaccord"
+                "value": "https://github.com/aroary/disaccord"
             }
         ],
         "icon": {
             "image": "/media/logos/disaccord.png",
-            "url": "http://https://github.com/aroary/disaccord"
+            "url": "https://github.com/aroary/disaccord"
         }
     }
 ]
