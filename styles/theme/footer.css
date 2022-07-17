@@ -77,6 +77,10 @@ footer a::after {
     .mobile tr {
         height: min-content;
     }
+
+    .mobile td {
+        text-align: center;
+    }
     
     .desktop, #settings {
         display: none;
