@@ -41,8 +41,3 @@ ul {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-li:hover {
-    -webkit-box-shadow: inset 0 0 6px var(--theme-color-fg);
-    box-shadow: inset 0 0 6px var(--theme-color-fg);
-}
