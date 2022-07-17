@@ -1,5 +1,3 @@
-optomizeMarginForAgent(document.getElementsByTagName("main")[0], 10, 10);
-
 const senderName = document.getElementById("name");
 const returnMethod = document.getElementById("return");
 const message = document.getElementById("message");

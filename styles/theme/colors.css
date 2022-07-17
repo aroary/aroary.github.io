@@ -1,0 +1,14 @@
+:root {
+    --link: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    --theme-color-fg: black;
+    --theme-color-bg: white;
+    --theme-image-filter: invert(0%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-color-fg: #A1A1A1;
+        --theme-color-bg: #1A1A1A;
+        --theme-image-filter: invert(100%);
+    }
+}

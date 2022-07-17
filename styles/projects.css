@@ -1,12 +1,14 @@
 body {
-    background-color: white;
+    background-color: var(--theme-color-bg);
+    color: var(--theme-color-fg);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    margin: 0;
 }
 
-main {
+body > main {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 main > div {
@@ -16,8 +18,8 @@ main > div {
 }
 
 .project {
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--theme-color-bg);
+    border: 1px solid var(--theme-color-fg);
     width: 400px;
     height: 500px;
     margin: 10px;
@@ -35,7 +37,7 @@ main > div {
 }
 
 .project button {
-    background-color: white;
+    background-color: var(--theme-color-bg);
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -44,17 +46,17 @@ main > div {
 }
 
 .project button:hover {
-    background-color: white;
+    background-color: var(--theme-color-bg);
     border-radius: 5px;
     padding: 5px;
 }
 
 .project img {
-    background-color: white;
+    background-color: var(--theme-color-bg);
     width: 100%;
 }
 
 .project:hover {
-    -webkit-box-shadow: 0 0 10px black;
-	box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px var(--theme-color-fg);
+	box-shadow: 0 0 10px var(--theme-color-fg);
 }

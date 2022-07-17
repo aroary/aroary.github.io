@@ -1,4 +1,6 @@
 main {
+    background-color: var(--theme-color-bg);
+    color: var(--theme-color-fg);
     text-align: justify;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -11,20 +13,26 @@ main {
 }
 
 main a {
-    color: black;
+    color: var(--theme-color-fg);
 }
 
 main img {
+    filter: var(--theme-image-filter);
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 6px black;
-	box-shadow: 0 0 6px black;
+    -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
+	box-shadow: 0 0 6px var(--theme-color-fg);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 main img:hover {
-    -webkit-box-shadow: 0 08px black;
-	box-shadow: 0 0 8px black;
+    -webkit-box-shadow: 0 08px var(--theme-color-fg);
+	box-shadow: 0 0 8px var(--theme-color-fg);
+}
+
+main button {
+    background-color: var(--theme-color-bg);
+    color: var(--theme-color-fg);
 }
 
 main code {
@@ -38,6 +46,6 @@ main code {
 }
 
 main a::after {
-    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    content: var(--link);
     margin: 0px 3px 0px 5px;
 }

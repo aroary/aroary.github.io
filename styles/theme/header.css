@@ -5,9 +5,10 @@
 }
 
 header {
-    background-color: white;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+    background-color: var(--theme-color-bg);
+    color: var(--theme-color-fg);
+    -webkit-box-shadow: 0 8px 6px -6px var(--theme-color-fg)black;
+	box-shadow: 0 8px 6px -6px var(--theme-color-fg);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     padding: 10px;
     height: 50px;
@@ -21,8 +22,8 @@ header {
 }
 
 header:hover {
-    -webkit-box-shadow: 0 10px 6px -6px black;
-	box-shadow: 0 10px 6px -6px black;
+    -webkit-box-shadow: 0 10px 6px -6px var(--theme-color-fg);
+	box-shadow: 0 10px 6px -6px var(--theme-color-fg);
 }
 
 header > table {
@@ -32,6 +33,7 @@ header > table {
 }
 
 header img {
+    filter: var(--theme-image-filter);
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -42,7 +44,7 @@ header img {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--theme-color-fg);
 }
 
 header > table > tbody > tr > td {
@@ -78,9 +80,10 @@ header nav ul > li {
 }
 
 #navi a:hover {
-    background-color:  white;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+    background-color:  var(--theme-color-fg);
+    color: var(--theme-color-bg);
+    -webkit-box-shadow: 0 8px 6px -6px var(--theme-color-fg);
+	box-shadow: 0 8px 6px -6px var(--theme-color-fg);
 }
 
 #medi {
@@ -88,5 +91,6 @@ header nav ul > li {
 }
 
 #medi img:hover {
-    background-color: white;
+    background-color: var(--theme-color-fg);
+    color: var(--theme-color-bg);
 }
