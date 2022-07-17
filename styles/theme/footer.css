@@ -1,6 +1,7 @@
 footer {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
+    font-size: small;
     -webkit-box-shadow: inset 0 8px 6px -6px var(--theme-color-fg);
 	box-shadow: inset 0 8px 6px -6px var(--theme-color-fg);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
@@ -62,4 +63,22 @@ footer td {
 footer a::after {
     content: var(--link);
     margin: 0px 3px 0px 5px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .mobile {
+        display: block;
+    }
+    
+    .mobile tr {
+        height: min-content;
+    }
+    
+    .desktop, #settings {
+        display: none;
+    }
 }

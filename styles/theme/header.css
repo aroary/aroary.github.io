@@ -94,3 +94,9 @@ header nav ul > li {
     background-color: var(--theme-color-fg);
     color: var(--theme-color-bg);
 }
+
+@media only screen and (max-width: 400px) {
+    #logo, #medi {
+        display: none;
+    }
+}
