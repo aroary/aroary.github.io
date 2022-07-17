@@ -1,5 +1,4 @@
 main {
-    background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
     text-align: justify;
     margin-top: 50px;
