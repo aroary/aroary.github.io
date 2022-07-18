@@ -5,13 +5,18 @@ window.onresize = () => {
     dots.height = window.innerHeight;
 };
 
+const consistency = Math.floor(Math.random() * 9) + 1
+
 var ctx = dots.getContext("2d");
 var width = dots.width = window.innerWidth;
 var height = dots.height = window.innerHeight;
 var circles = [];
 
-for (var i = 0; i < 10; i++) circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
+for (var i = 0; i < consistency * 10; i++) circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
 dots.onclick = () => circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
+
+ctx.strokeStyle = "silver";
+ctx.stroke();
 
 setInterval(() => {
     ctx = dots.getContext("2d");
@@ -33,14 +38,36 @@ setInterval(() => {
         return circle;
     });
 
-    ctx.strokeStyle = "silver";
-    ctx.stroke();
+    // Connect in order
+    // ctx.beginPath();
+    // ctx.moveTo(circles[0].x, circles[0].y);
+    // for (var i = 1; i < circles.length; i++) ctx.lineTo(circles[i].x, circles[i].y);
+    // ctx.lineTo(circles[0].x, circles[0].y);
+    // ctx.stroke();
 
-    ctx.beginPath();
-    ctx.moveTo(circles[0].x, circles[0].y);
-    for (var i = 1; i < circles.length; i++) ctx.lineTo(circles[i].x, circles[i].y);
-    ctx.lineTo(circles[0].x, circles[0].y);
-    ctx.stroke();
+    // Connect to close
+    circles.forEach(circle => {
+        ctx.beginPath();
+        ctx.moveTo(circle.x, circle.y);
+        circles.filter(c => distance(c.x, c.y, circle.x, circle.y) < width / consistency).forEach(c => ctx.lineTo(c.x, c.y));
+        ctx.stroke();
+    });
+
+    // Connect to distant
+    // circles.forEach(circle => {
+    //     ctx.beginPath();
+    //     ctx.moveTo(circle.x, circle.y);
+    //     circles.filter(c => distance(c.x, c.y, circle.x, circle.y) > (width / consistency) * ((consistency - 1) || 1)).forEach(c => ctx.lineTo(c.x, c.y));
+    //     ctx.stroke();
+    // });
+
+    // Connect to all
+    // circles.forEach(circle => {
+    //     ctx.beginPath();
+    //     ctx.moveTo(circle.x, circle.y);
+    //     circles.forEach(c => ctx.lineTo(c.x, c.y));
+    //     ctx.stroke();
+    // });
 
     circles.forEach(circle => {
         ctx.beginPath();
@@ -49,3 +76,9 @@ setInterval(() => {
         ctx.fill();
     });
 }, 25);
+
+function distance(x1, y1, x2, y2) {
+    let y = x2 - x1;
+    let x = y2 - y1;
+    return Math.sqrt(x * x + y * y);
+};
