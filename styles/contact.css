@@ -12,10 +12,6 @@ body > main {
     text-align: center;
 }
 
-main > p {
-    text-align: left;
-}
-
 main input:not(#urgent):not(#important), textarea {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
