@@ -78,7 +78,7 @@ setInterval(() => {
         ctx.fillStyle = "silver";
         ctx.fill();
     });
-}, 25);
+}, 50);
 
 function distance(x1, y1, x2, y2) {
     let y = x2 - x1;

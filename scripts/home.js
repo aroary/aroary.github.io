@@ -7,3 +7,16 @@ document.querySelector("main>div").onmouseout = () => {
     document.querySelectorAll("main>div>h2").forEach(element => element.style.boxShadow = "inset 0 10px 6px -10px var(--theme-color-fg), inset 0 -10px 6px -10px var(--theme-color-fg)");
     document.querySelectorAll("div>p").forEach(element => element.style.boxShadow = "inset 0 0 6px var(--theme-color-fg)");
 };
+
+[...document.getElementsByClassName("gif")].forEach(img => {
+    img.onmouseover = () => {
+        const alt = img.getAttribute("asrc");
+        img.setAttribute("asrc", img.src);
+        img.src = alt;
+    };
+    img.onmouseout = () => {
+        const alt = img.getAttribute("asrc");
+        img.setAttribute("asrc", img.src);
+        img.src = alt;
+    };
+});
