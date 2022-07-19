@@ -1,5 +1,8 @@
 const dots = document.getElementById("dots");
 
+var color = "silver";
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) color = "darknavy";
+
 window.onresize = () => {
     dots.width = window.innerWidth;
     dots.height = window.innerHeight;
@@ -15,7 +18,7 @@ var circles = [];
 for (var i = 0; i < consistency * 10; i++) circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
 dots.onclick = () => circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
 
-ctx.strokeStyle = "silver";
+ctx.strokeStyle = color;
 ctx.stroke();
 
 setInterval(() => {
