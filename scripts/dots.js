@@ -13,10 +13,19 @@ const consistency = Math.floor(Math.random() * 9) + 1
 var ctx = dots.getContext("2d");
 var width = dots.width = window.innerWidth;
 var height = dots.height = window.innerHeight;
+var rect = dots.getBoundingClientRect();
 var circles = [];
 
 for (var i = 0; i < consistency * 10; i++) circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
-dots.onclick = () => circles.push({ x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height), d: Math.floor(Math.random() * 360) });
+dots.onclick = e => {
+    circles.shift();
+    const dot = {
+        x: (e.clientX - rect.left) / (rect.right - rect.left) * dots.width,
+        y: (e.clientY - rect.top) / (rect.bottom - rect.top) * dots.height,
+        d: Math.floor(Math.random() * 360)
+    };
+    circles.push(dot);
+};
 
 ctx.strokeStyle = color;
 ctx.stroke();
@@ -25,6 +34,7 @@ setInterval(() => {
     ctx = dots.getContext("2d");
     width = dots.width;
     height = dots.height;
+    rect = dots.getBoundingClientRect();
 
     ctx.clearRect(0, 0, width, height);
 

@@ -9,6 +9,7 @@ main {
     top: 50px;
     left: 0;
     right: 0;
+    pointer-events: none;
 }
 
 main a {
@@ -22,6 +23,7 @@ main img {
 	box-shadow: 0 0 6px var(--theme-color-fg);
     margin-top: 20px;
     margin-bottom: 20px;
+    pointer-events: none;
 }
 
 main img:hover {
@@ -47,4 +49,8 @@ main code {
 main a::after {
     content: var(--link);
     margin: 0px 3px 0px 5px;
+}
+
+main * {
+    pointer-events: auto;
 }
