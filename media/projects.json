@@ -1,5 +1,23 @@
 [
     {
+        "title": "web10",
+        "description": "web 2 based decentralized internet invented by Jacob Hoffman",
+        "resources": [
+            {
+                "name": "GitHub",
+                "value": "https://github.com/aroary/web10"
+            },
+            {
+                "name": "Website",
+                "value": "https://web10.app"
+            }
+        ],
+        "icon": {
+            "image": "/media/web10.png",
+            "url": "https://github.com/aroary/web10"
+        }
+    },
+    {
         "title": "brick-breaker",
         "description": "Play brick breaker",
         "resources": [
@@ -24,6 +42,10 @@
             {
                 "name": "Marketplace",
                 "value": "https://marketplace.visualstudio.com/items?itemName=aroary.loremipsum"
+            },
+            {
+                "name": "Website",
+                "value": "https://aroary.com/lorem_ipsum"
             }
         ],
         "icon": {
@@ -51,7 +73,7 @@
     },
     {
         "title": "Disaccord",
-        "description": "A discord.js@13.1.0 bot template for interaction and event handling.",
+        "description": "A discord.js@13 bot template for interaction and event handling.",
         "resources": [
             {
                 "name": "GitHub",
