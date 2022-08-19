@@ -17,6 +17,10 @@ main > div {
     flex-wrap: wrap;
 }
 
+#projects {
+    pointer-events: none;
+}
+
 .project {
     background-color: var(--theme-color-bg);
     border: 1px solid var(--theme-color-fg);
