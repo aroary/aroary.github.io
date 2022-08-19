@@ -26,6 +26,7 @@ main > div {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .project > div {
@@ -51,8 +52,7 @@ main > div {
     padding: 5px;
 }
 
-.project img {
-    background-color: var(--theme-color-bg);
+.project > img {
     width: 100%;
 }
 

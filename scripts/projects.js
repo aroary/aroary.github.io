@@ -6,6 +6,7 @@ projects.onload = () => {
         JSON.parse(projects.responseText).forEach(project => {
             const div = document.createElement('div');
             div.classList.add('project');
+            div.onclick = () => window.open(project.icon.url, '_blank', 'noopener noreferrer');
 
             const title = document.createElement('h2');
             title.innerHTML = project.title;
@@ -36,13 +37,7 @@ projects.onload = () => {
             const image = document.createElement('img');
             image.src = project.icon.image;
 
-            const imageLink = document.createElement('a');
-            imageLink.href = project.icon.url;
-            imageLink.target = '_blank';
-            imageLink.rel = "noopener noreferrer";
-            imageLink.appendChild(image);
-
-            div.appendChild(imageLink);
+            div.appendChild(image);
 
             container.prepend(div);
 
