@@ -1,6 +1,6 @@
 .success {
     border: 1px solid #00ff00;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 255, 0, .1);
     padding: 10px;
 }
@@ -8,13 +8,13 @@
 .message {
     border: 1px solid #ff6400;
     background-color: rgba(255, 100, 0, .1);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
 }
 
 .fail {
     border: 1px solid #ff0000;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(255, 0, 0, .1);
     padding: 10px;
 }
