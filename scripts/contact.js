@@ -36,7 +36,7 @@ send.onclick = () => {
     request.addEventListener('load', () => {
         if (request.status < 400) {
             [send, senderName, returnMethod, message, urgent, important].forEach(input => input.setAttribute("disabled", "disabled"));
-            send.innerHTML = "Sent";
-        };
+            notify.success(confirmation, "sent");
+        } else notify.success(confirmation, request.status);
     });
 };
