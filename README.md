@@ -1,9 +1,2 @@
 # aroary
-#### Links:
-* [Resume](https://aroary.github.io/resume.html)
-* [Home](https://aroary.github.io/home.html)
-* [Contact](https://aroary.github.io/contact.html)
-* [Quote](https://aroary.github.io/quote.html)
-* [Resume](https://aroary.github.io/resume.html)
-* [Webook](https://aroary.github.io/discord/webhook.html)
-* more soon!
+## My website!
