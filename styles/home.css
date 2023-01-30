@@ -1,59 +1,43 @@
 body {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped';
     margin: 0;
 }
 
-body > main {
+main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-main > div {
+main>div {
     background-color: var(--theme-color-bg);
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     -webkit-box-shadow: 0 0 8px var(--theme-color-fg);
-	box-shadow: 0 0 8px var(--theme-color-fg);
+    box-shadow: 0 0 8px var(--theme-color-fg);
 }
 
-main > div:hover {
+main>div:hover {
     -webkit-box-shadow: 0 0 10px var(--theme-color-fg);
-	box-shadow: 0 0 10px var(--theme-color-fg);
+    box-shadow: 0 0 10px var(--theme-color-fg);
 }
 
-main > div > div {
-    padding: 30px;
-}
-
-main > div > h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+main>div>h2,
+main>div>h6 {
+    padding: 10px;
     -webkit-box-shadow: inset 0 10px 6px -10px var(--theme-color-fg), inset 0 -10px 6px -10px var(--theme-color-fg);
     box-shadow: inset 0 10px 6px -10px var(--theme-color-fg), inset 0 -10px 6px -10px var(--theme-color-fg);
-    background-color:  var(--theme-color-bg);
-    width: 100%;
+    background-color: var(--theme-color-bg);
 }
 
-main > img {
+main>img {
     width: 50%;
 }
 
 main p {
-    background-color:  var(--theme-color-bg);
-    -webkit-box-shadow: inset 0 0 6px var(--theme-color-fg);
-    box-shadow: inset 0 0 6px var(--theme-color-fg);
-    border-radius: 10px;
+    background-color: var(--theme-color-bg);
     text-align: justify;
     padding: 10px;
     text-indent: 50px;
-}
-
-main h6 {
-    text-align: right;
-    padding: 10px;
 }

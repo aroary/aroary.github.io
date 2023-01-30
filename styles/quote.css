@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-body > main {
+body>main {
     max-width: 600px;
     margin-top: 10%;
     margin-left: auto;
@@ -17,7 +17,7 @@ body > main {
     background-color: var(--theme-color-bg);
     border-radius: 25px;
     -webkit-box-shadow: 0 0 8px var(--theme-color-fg);
-	box-shadow: 0 0 8px var(--theme-color-fg);
+    box-shadow: 0 0 8px var(--theme-color-fg);
     font-family: 'Dancing Script', cursive;
     padding-top: 100px;
     padding-bottom: 100px;

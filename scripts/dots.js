@@ -1,14 +1,14 @@
 const dots = document.getElementById("dots");
 
-var color = "silver";
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) color = "darknavy";
+const lineColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "darknavy" : "silver";
+const dotColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "silver" : "darknavy";
 
 window.onresize = () => {
     dots.width = window.innerWidth;
     dots.height = window.innerHeight;
 };
 
-const consistency = Math.floor(Math.random() * 9) + 1
+const consistency = Math.floor(Math.random() * 4) + 6
 
 var ctx = dots.getContext("2d");
 var width = dots.width = window.innerWidth;
@@ -27,7 +27,7 @@ dots.onclick = e => {
     circles.push(dot);
 };
 
-ctx.strokeStyle = color;
+ctx.strokeStyle = lineColor;
 ctx.stroke();
 
 setInterval(() => {
@@ -85,7 +85,7 @@ setInterval(() => {
     circles.forEach(circle => {
         ctx.beginPath();
         ctx.arc(circle.x, circle.y, 3, 0, 2 * Math.PI);
-        ctx.fillStyle = "silver";
+        ctx.fillStyle = dotColor;
         ctx.fill();
     });
 }, 50);

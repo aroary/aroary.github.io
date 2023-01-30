@@ -1,18 +1,19 @@
 body {
-    background-color:  var(--theme-color-bg);
+    background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     margin: 0;
 }
 
-body > main {
+body>main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-main input:not(#urgent):not(#important), textarea {
+main input:not(#urgent):not(#important),
+textarea {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
     -webkit-box-shadow: inset 0 0 6px var(--theme-color-fg);
@@ -27,7 +28,8 @@ main input:not(#urgent):not(#important), textarea {
     width: calc(100% - 20px);
 }
 
-main input:not(#urgent):not(#important):hover, textarea:hover {
+main input:not(#urgent):not(#important):hover,
+textarea:hover {
     -webkit-box-shadow: inset 0 0 10px var(--theme-color-fg);
     box-shadow: inset 0 0 10px var(--theme-color-fg);
 }

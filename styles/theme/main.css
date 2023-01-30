@@ -20,7 +20,7 @@ main img {
     filter: var(--theme-image-filter);
     border-radius: 5px;
     -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
-	box-shadow: 0 0 6px var(--theme-color-fg);
+    box-shadow: 0 0 6px var(--theme-color-fg);
     margin-top: 20px;
     margin-bottom: 20px;
     pointer-events: none;
@@ -28,7 +28,7 @@ main img {
 
 main img:hover {
     -webkit-box-shadow: 0 08px var(--theme-color-fg);
-	box-shadow: 0 0 8px var(--theme-color-fg);
+    box-shadow: 0 0 8px var(--theme-color-fg);
 }
 
 main button {

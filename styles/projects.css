@@ -5,13 +5,13 @@ body {
     margin: 0;
 }
 
-body > main {
+body>main {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-main > div {
+main>div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -33,7 +33,7 @@ main > div {
     cursor: pointer;
 }
 
-.project > div {
+.project>div {
     padding: 20px;
 }
 
@@ -56,11 +56,11 @@ main > div {
     padding: 5px;
 }
 
-.project > img {
+.project>img {
     width: 100%;
 }
 
 .project:hover {
     -webkit-box-shadow: 0 0 10px var(--theme-color-fg);
-	box-shadow: 0 0 10px var(--theme-color-fg);
+    box-shadow: 0 0 10px var(--theme-color-fg);
 }
