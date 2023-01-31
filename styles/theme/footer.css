@@ -6,7 +6,7 @@ footer {
     box-shadow: inset 0 8px 6px -6px var(--theme-color-fg);
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     padding: 10px;
-    height: 50px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -14,6 +14,7 @@ footer {
     overflow: hidden;
     display: none;
     vertical-align: top;
+    text-align: center;
 }
 
 footer:hover {
@@ -25,63 +26,7 @@ footer a {
     color: var(--theme-color-fg);
 }
 
-footer table {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-footer tr {
-    vertical-align: top;
-    width: 100%;
-    height: 50px;
-}
-
-footer td {
-    width: calc(100% / 3);
-}
-
-#settings {
-    text-align: left;
-}
-
-#information {
-    text-align: center;
-}
-
-#quote {
-    text-align: right;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 footer a::after {
     content: var(--link);
     margin: 0px 3px 0px 5px;
-}
-
-.mobile {
-    display: none;
-}
-
-@media only screen and (max-width: 500px) {
-    .mobile {
-        display: block;
-    }
-
-    .mobile tr {
-        height: min-content;
-    }
-
-    .mobile td {
-        text-align: center;
-    }
-
-                                                                .desktop,
-                                                                #settings {
-        display: none;
-    }
 }
