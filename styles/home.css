@@ -38,6 +38,6 @@ main>img {
 main p {
     background-color: var(--theme-color-bg);
     text-align: justify;
-    padding: 10px;
+    margin: 20px;
     text-indent: 50px;
 }
