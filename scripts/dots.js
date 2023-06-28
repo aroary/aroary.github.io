@@ -1,8 +1,6 @@
 const dots = document.getElementById("dots");
 
-const lineColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "darknavy" : "silver";
-const dotColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "silver" : "darknavy";
-
+const color = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "darknavy" : "silver";
 const consistency = Math.floor(Math.random() * 4) + 6
 
 var ctx = dots.getContext("2d");
@@ -32,7 +30,7 @@ dots.onmousemove = e => {
     y = e.offsetY;
 }
 
-ctx.strokeStyle = lineColor;
+ctx.strokeStyle = color;
 ctx.stroke();
 
 setInterval(() => {
@@ -71,7 +69,7 @@ setInterval(() => {
     circles.forEach(circle => {
         ctx.beginPath();
         ctx.arc(circle.x, circle.y, 3, 0, 2 * Math.PI);
-        ctx.fillStyle = dotColor;
+        ctx.fillStyle = color;
         ctx.fill();
     });
 }, 50);
