@@ -32,6 +32,7 @@ main>div>h6 {
 }
 
 main>img {
+    filter: var(--theme-image-filter);
     width: 50%;
 }
 

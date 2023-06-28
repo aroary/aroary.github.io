@@ -1,48 +1,37 @@
-const projects = new XMLHttpRequest();
-projects.open('GET', './media/projects.json', true);
-projects.onload = () => {
-    if (projects.status >= 200 && projects.status < 400) {
-        const container = document.getElementById('projects');
-        JSON.parse(projects.responseText).forEach(project => {
-            const div = document.createElement('div');
-            div.classList.add('project');
-            div.onclick = () => window.open(project.icon.url, '_blank', 'noopener noreferrer');
+const projects = document.getElementById("projects");
 
-            const title = document.createElement('h2');
-            title.innerHTML = project.title;
-
-            const description = document.createElement('p');
-            description.innerHTML = project.description;
-
-            const info = document.createElement('div');
-            info.appendChild(title);
-            info.appendChild(document.createElement("hr"));
-            info.appendChild(description);
-
-            project.resources.forEach(resource => {
-                const link = document.createElement('a');
-                link.href = resource.value;
-                link.target = '_blank';
-                link.rel = "noopener noreferrer";
-                link.innerHTML = resource.name;
-
-                const button = document.createElement('button');
-                button.appendChild(link);
-
-                info.appendChild(button);
-            });
-
-            div.appendChild(info);
-
-            const image = document.createElement('img');
-            image.src = project.icon.image;
-
-            div.appendChild(image);
-
-            container.prepend(div);
-
-            setFooter();
-        });
+new Promise((resolve, reject) => {
+    const resource = new XMLHttpRequest();
+    resource.open('GET', './media/projects.json', true);
+    resource.onload = () => {
+        if (resource.status >= 200 && resource.status < 400) resolve(JSON.parse(resource.responseText));
+        else reject(resource.status);
     };
-};
-projects.send();
+    resource.send();
+}).then(resources => {
+    resources.forEach((project, id) => {
+        const row = document.createElement("tr");
+        const icon = document.createElement("td");
+        const info = document.createElement("td");
+
+        icon.innerHTML = `<a href="${project.icon.url}"><img src="./${project.icon.image}"></img></a>`;
+        info.innerHTML = `<h2>${project.title}</h2><h3>${project.description}</h3>`;
+
+        project.resources.forEach(resource => {
+            info.innerHTML += `<button><a href="${resource.value}">${resource.name}</a></button>`;
+        })
+
+        if (id % 2 === 0) {
+            row.appendChild(icon);
+            row.appendChild(info);
+        } else {
+            row.appendChild(info);
+            row.appendChild(icon);
+        }
+
+        projects.appendChild(row);
+
+        // Bandaid
+        setFooter();
+    });
+}).catch(console.log);

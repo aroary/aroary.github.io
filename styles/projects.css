@@ -5,62 +5,33 @@ body {
     margin: 0;
 }
 
-body>main {
+main {
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-main>div {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#projects {
+main *:not(a){
     pointer-events: none;
 }
 
-.project {
-    background-color: var(--theme-color-bg);
-    border: 1px solid var(--theme-color-fg);
-    width: 400px;
-    height: 500px;
-    margin: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.project>div {
-    padding: 20px;
-}
-
-.project p {
-    text-align: left;
-}
-
-.project button {
-    background-color: var(--theme-color-bg);
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.project button:hover {
-    background-color: var(--theme-color-bg);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.project>img {
+main table {
     width: 100%;
 }
 
-.project:hover {
-    -webkit-box-shadow: 0 0 10px var(--theme-color-fg);
-    box-shadow: 0 0 10px var(--theme-color-fg);
+main td {
+    width: 50%;
+}
+
+main td>canvas {
+    width: 100%;
+}
+
+main td img {
+    width: 25%;
+}
+
+main button{
+    margin: 10px;
 }

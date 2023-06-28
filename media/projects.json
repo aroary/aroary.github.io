@@ -22,20 +22,6 @@
         }
     },
     {
-        "title": "brick-breaker",
-        "description": "Play brick breaker",
-        "resources": [
-            {
-                "name": "GitHub",
-                "value": "https://github.com/aroary/brick-breaker"
-            }
-        ],
-        "icon": {
-            "image": "/media/github-light.png",
-            "url": "https://github.com/aroary/brick-breaker"
-        }
-    },
-    {
         "title": "lorem ipsum",
         "description": "lorem ipsum generator to generate placeholder text in your code. Quickly insert placeholder text using a simple command.",
         "resources": [

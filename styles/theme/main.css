@@ -17,7 +17,6 @@ main a {
 }
 
 main img {
-    filter: var(--theme-image-filter);
     border-radius: 5px;
     -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
     box-shadow: 0 0 6px var(--theme-color-fg);
