@@ -2,7 +2,8 @@ const projects = document.getElementById("projects");
 
 new Promise((resolve, reject) => {
     const resource = new XMLHttpRequest();
-    resource.open('GET', './media/projects.json', true);
+    // resource.open('GET', './media/projects.json', true);
+    resource.open('GET', 'https://raw.githubusercontent.com/aroary/aroary.github.io/main/media/projects.json', true);
     resource.onload = () => {
         if (resource.status >= 200 && resource.status < 400) resolve(JSON.parse(resource.responseText));
         else reject(resource.status);
@@ -33,5 +34,12 @@ new Promise((resolve, reject) => {
 
         // Bandaid
         setFooter();
+
+        if (id < resources.length - 1) {
+            const spacer = document.createElement("tr");
+            spacer.innerHTML = "<td><hr></td><td><hr></td>";
+
+            projects.appendChild(spacer);
+        }
     });
 }).catch(console.log);

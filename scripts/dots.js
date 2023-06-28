@@ -1,6 +1,6 @@
 const dots = document.getElementById("dots");
 
-const color = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "darknavy" : "silver";
+const color = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "black" : "silver";
 const consistency = Math.floor(Math.random() * 4) + 6
 
 var ctx = dots.getContext("2d");
