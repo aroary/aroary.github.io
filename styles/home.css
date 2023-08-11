@@ -15,7 +15,12 @@ main {
 main>div {
     background-color: var(--theme-color-bg);
     -webkit-box-shadow: 0 0 8px var(--theme-color-fg);
-    box-shadow: 0 0 8px var(--theme-color-fg);
+    box-shadow: 0 0 8px var(--theme-color-fg);    
+}
+
+main>div>*:not(h1, h2, h3, h4, h5, h6) {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 main>div:hover {
@@ -41,4 +46,13 @@ main p {
     text-align: justify;
     margin: 20px;
     text-indent: 50px;
+}
+
+main button {
+    margin: 10px;
+}
+
+main table {
+    margin: 20px;
+    width: calc(100% - 40px);
 }

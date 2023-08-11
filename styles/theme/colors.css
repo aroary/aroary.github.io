@@ -3,6 +3,8 @@
     --theme-color-fg: black;
     --theme-color-bg: white;
     --theme-image-filter: invert(0%);
+    --theme-filter-dark: invert(0%);
+    --theme-filter-light: invert(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,5 +13,7 @@
         --theme-color-fg: #A1A1A1;
         --theme-color-bg: #1A1A1A;
         --theme-image-filter: invert(100%);
+        --theme-filter-dark: invert(100%);
+        --theme-filter-light: invert(0%);
     }
 }

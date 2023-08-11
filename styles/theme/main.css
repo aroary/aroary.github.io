@@ -16,8 +16,18 @@ main a {
     color: var(--theme-color-fg);
 }
 
-main img {
+main button>a:hover {
+    color: var(--theme-color-bg);
+}
+
+main div,
+main table,
+main img,
+main button {
     border-radius: 5px;
+}
+
+main img {
     -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
     box-shadow: 0 0 6px var(--theme-color-fg);
     margin-top: 20px;
@@ -31,8 +41,20 @@ main img:hover {
 }
 
 main button {
+    border: 1px solid var(--theme-color-fg);
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
+    -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
+    box-shadow: 0 0 6px var(--theme-color-fg);
+    min-width: 100px;
+    padding: 10px;
+}
+
+main button:hover {
+    background-color: var(--theme-color-fg);
+    color: var(--theme-color-bg);
+    -webkit-box-shadow: inset 0 0 6px var(--theme-color-bg);
+    box-shadow: inset 0 0 6px var(--theme-color-bg);
 }
 
 main code {
@@ -52,4 +74,8 @@ main a::after {
 
 main * {
     pointer-events: auto;
+}
+
+main table {
+    width: 100%;
 }

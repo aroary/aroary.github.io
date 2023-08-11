@@ -6,8 +6,8 @@
 }
 
 .message {
-    border: 1px solid #ff6400;
-    background-color: rgba(255, 100, 0, .1);
+    border: 1px solid #ff7f00;
+    background-color: rgba(255, 127, 0, .1);
     border-radius: 10px;
     padding: 10px;
 }

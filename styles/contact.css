@@ -12,7 +12,7 @@ body>main {
     text-align: center;
 }
 
-main input:not(#urgent):not(#important),
+main input:not(#urgent, #important),
 textarea {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
@@ -24,8 +24,16 @@ textarea {
     margin-top: 1px;
     margin-bottom: 1px;
     resize: vertical;
-    text-align: left;
     width: calc(100% - 20px);
+}
+
+#urgent, #important {
+    border: none;
+    border: 1px solid var(--theme-color-fg);
+    accent-color: var(--theme-color-fg);
+    -webkit-box-shadow: 0 0 6px var(--theme-color-fg);
+    box-shadow: 0 0 6px var(--theme-color-fg);
+    filter: var(--theme-filter-dark);
 }
 
 main input:not(#urgent):not(#important):hover,
@@ -38,4 +46,12 @@ ul {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+main td:first-child {
+    text-align: right;
+}
+
+main td:last-child {
+    text-align: left;
 }

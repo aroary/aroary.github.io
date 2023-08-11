@@ -1,9 +1,5 @@
 const senderName = document.getElementById("name");
 const returnMethod = document.getElementById("return");
-const message = document.getElementById("message");
-const send = document.getElementById("send");
-const urgent = document.getElementById("urgent");
-const important = document.getElementById("important");
 
 senderName.value = returnMethod.value = message.value = "";
 
@@ -36,7 +32,7 @@ send.onclick = () => {
     request.addEventListener('load', () => {
         if (request.status < 400) {
             [send, senderName, returnMethod, message, urgent, important].forEach(input => input.setAttribute("disabled", "disabled"));
-            notify.success(confirmation, "sent");
-        } else notify.success(confirmation, request.status);
+            notify.success(confirmation, `Success (${request.status} ${request.statusText})`);
+        } else notify.fail(confirmation, `Fail (${request.status} ${request.statusText})`);
     });
 };
