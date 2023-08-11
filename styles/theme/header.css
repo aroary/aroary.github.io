@@ -1,9 +1,7 @@
 @keyframes roll {
     from {
         transform: rotate(0deg);
-    }
-
-    to {
+    } to {
         transform: rotate(360deg);
     }
 }
@@ -104,7 +102,6 @@ header nav ul>li {
 }
 
 @media only screen and (max-width: 500px) {
-
     #logo,
     #medi {
         display: none;

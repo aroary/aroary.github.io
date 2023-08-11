@@ -19,7 +19,8 @@
         "icon": {
             "image": "/media/logos/web10.png",
             "url": "https://github.com/aroary/web10"
-        }
+        },
+        "date": "2021 - present"
     },
     {
         "title": "lorem ipsum",
@@ -41,7 +42,8 @@
         "icon": {
             "image": "/media/logos/lorem_ipsum.png",
             "url": "https://aroary.com/lorem_ipsum/"
-        }
+        },
+        "date": "2021 - 2022"
     },
     {
         "title": "Website",
@@ -59,7 +61,8 @@
         "icon": {
             "image": "/media/pfp.png",
             "url": "https://aroary.com/"
-        }
+        },
+        "date": "2021 - 2023"
     },
     {
         "title": "Disaccord",
@@ -73,6 +76,7 @@
         "icon": {
             "image": "/media/logos/disaccord.png",
             "url": "https://github.com/aroary/disaccord"
-        }
+        },
+        "date": "2021 - 2021"
     }
 ]

@@ -24,10 +24,6 @@ main td {
     width: 50%;
 }
 
-main td>canvas {
-    width: 100%;
-}
-
 main td img {
     width: 50%;
     -webkit-box-shadow: none;
@@ -36,4 +32,40 @@ main td img {
 
 main button{
     margin: 10px;
+}
+
+.icon,
+.info {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.left .icon>h5 {
+    float: left;
+}
+
+.right .icon>h5 {
+    float: right;
+}
+
+.left .icon {
+    text-align: right;
+}
+
+.right .icon {
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .icon {
+        display: none;
+    }
+
+    main table tr hr {
+        display: none;
+    }
+
+    main table tr td {
+        width: 100%;
+    }
 }
