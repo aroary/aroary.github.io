@@ -17,13 +17,9 @@ send.onclick = () => {
         content: `${urgent.checked ? " @everyone" : ""}${important.checked ? " @here" : ""}` || null,
         embeds: [
             {
-                author: {
-                    name: senderName.value
-                },
+                author: { name: senderName.value },
                 description: message.value,
-                footer: {
-                    text: returnMethod.value,
-                }
+                footer: { text: returnMethod.value }
             }
         ]
     };
